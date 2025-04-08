@@ -7,7 +7,7 @@ canvas.height = 600;
 
 // Load the background image
 const background = new Image();
-background.src = "images/background.jpg";  // Ensure this path is correct
+background.src = "scene_proj/images/background.jpg";  // Ensure this path is correct
 background.onload = function () {
   console.log("Background loaded successfully");
 
@@ -20,7 +20,7 @@ background.onload = function () {
 
   // Load the first foreground image (no resizing)
   const img1 = new Image();  // Declare img1 here
-  img1.src = "images/image1.jpg";  // Ensure this path is correct
+  img1.src = "scene_proj/images/image1.jpg";  // Ensure this path is correct
   img1.onload = function () {
     console.log("Image 1 loaded successfully");
 
@@ -32,7 +32,7 @@ background.onload = function () {
 
     // Load the second foreground image (no resizing)
     const img2 = new Image();  // Declare img2 here
-    img2.src = "images/image2.jpg";  // Ensure this path is correct
+    img2.src = "scene_proj/images/image2.jpg";  // Ensure this path is correct
     img2.onload = function () {
       console.log("Image 2 loaded successfully");
 
