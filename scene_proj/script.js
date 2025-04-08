@@ -1,58 +1,39 @@
 const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
-// Canvas size (you can change this as needed)
+// Canvas size
 canvas.width = 800;
 canvas.height = 600;
 
 // Load the background image
 const background = new Image();
-background.src = "scene_proj/images/background.jpg";  // Correct path to background
+background.src = "scene_proj/images/background.jpg";  // Path to background image
 
-background.onload = function () {
+background.onload = function() {
   console.log("Background loaded successfully");
 
-  // Calculate center of canvas for positioning
-  const centerX = canvas.width / 2;
-  const centerY = canvas.height / 2;
-
-  // Fit the background to the canvas size
+  // Draw the background image on the canvas
   ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
   // Load the first foreground image
   const img1 = new Image();
-  img1.src = "scene_proj/images/image1.jpg";  // Correct path to first foreground image
+  img1.src = "scene_proj/images/image1.jpg";  // Path to first foreground image
 
-  img1.onload = function () {
+  img1.onload = function() {
     console.log("Image 1 loaded successfully");
 
-    // Position image1 centered
-    const img1X = centerX - img1.width / 2;  // Center horizontally
-    const img1Y = centerY - img1.height / 2 - 50;  // Center vertically, with a bit of offset
+    // Draw image1 on the canvas
+    ctx.drawImage(img1, 100, 100);  // Simple position, no resizing
+  };
 
-    ctx.drawImage(img1, img1X, img1Y);  // Draw image1
+  // Load the second foreground image
+  const img2 = new Image();
+  img2.src = "scene_proj/images/image2.jpg";  // Path to second foreground image
 
-    // Load the second foreground image
-    const img2 = new Image();
-    img2.src = "scene_proj/images/image2.jpg";  // Correct path to second foreground image
+  img2.onload = function() {
+    console.log("Image 2 loaded successfully");
 
-    img2.onload = function () {
-      console.log("Image 2 loaded successfully");
-
-      // Position image2 centered with slight offset
-      const img2X = centerX - img2.width / 2;  // Center horizontally
-      const img2Y = centerY - img2.height / 2 + 50;  // Offset below image1
-
-      ctx.drawImage(img2, img2X, img2Y);  // Draw image2
-
-      // Add centered text on top of canvas
-      ctx.font = "28px Arial";
-      ctx.fillStyle = "white";
-      const text = "Keira Fairy Scene";
-      const textWidth = ctx.measureText(text).width;
-      const textX = centerX - textWidth / 2;  // Center text horizontally
-      const textY = 50;  // Position text at the top
-      ctx.fillText(text, textX, textY);  // Draw text
-    };
+    // Draw image2 on the canvas
+    ctx.drawImage(img2, 300, 200);  // Simple position, no resizing
   };
 };
