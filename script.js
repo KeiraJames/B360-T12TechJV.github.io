@@ -45,7 +45,7 @@ background.onload = function () {
       // Add centered text on top of canvas
       ctx.font = "28px Arial";
       ctx.fillStyle = "white";
-      const text = "Keira - Canvas Scene";
+      const text = "Keira Fairy Scene";
       const textWidth = ctx.measureText(text).width;
       const textX = centerX - textWidth / 2;  // Center text horizontally
       const textY = 50;  // Position text at the top
