@@ -7,7 +7,8 @@ canvas.height = 600;
 
 // Load the background image
 const background = new Image();
-background.src = "scene_proj/images/background.jpg";  // Ensure this path is correct
+background.src = "scene_proj/images/background.jpg";  // Correct path
+
 background.onload = function () {
   console.log("Background loaded successfully");
 
@@ -16,11 +17,12 @@ background.onload = function () {
   const centerY = canvas.height / 2;
 
   // Fit the background to the canvas size
-  ctx.drawImage(background, 0, 0, canvas.width, canvas.height);  
+  ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
   // Load the first foreground image (no resizing)
-  const img1 = new Image();  // Declare img1 here
-  img1.src = "scene_proj/images/image1.jpg";  // Ensure this path is correct
+  const img1 = new Image();
+  img1.src = "scene_proj/images/image1.jpg";  // Correct path
+
   img1.onload = function () {
     console.log("Image 1 loaded successfully");
 
@@ -31,8 +33,9 @@ background.onload = function () {
     ctx.drawImage(img1, img1X, img1Y);  // Draw image1
 
     // Load the second foreground image (no resizing)
-    const img2 = new Image();  // Declare img2 here
-    img2.src = "scene_proj/images/image2.jpg";  // Ensure this path is correct
+    const img2 = new Image();
+    img2.src = "scene_proj/images/image2.jpg";  // Correct path
+
     img2.onload = function () {
       console.log("Image 2 loaded successfully");
 
