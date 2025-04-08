@@ -7,7 +7,7 @@ canvas.height = 600;
 
 // Load the background image
 const background = new Image();
-background.src = "images/background.jpg";  // Correct path
+background.src = "scene_proj/images/background.jpg";  // Correct path
 
 background.onload = function () {
   console.log("Background loaded successfully");
