@@ -3,14 +3,16 @@ const ctx = canvas.getContext("2d");
 
 // Load the background image
 const background = new Image();
-background.src = "images/background.jpg";  // Ensure this is correct
+background.src = "images/background.jpg";  // Ensure this path is correct
 background.onload = function () {
+  console.log("Background loaded successfully");
   ctx.drawImage(background, 0, 0, canvas.width, canvas.height);  // Fit background to canvas size
 
   // Load the first foreground image (resized to fit the canvas)
-  const img1 = new Image();
-  img1.src = "images/image1.jpg";  // Ensure this is correct
+  const img1 = new Image();  // Declare img1 here
+  img1.src = "images/image1.jpg";  // Ensure this path is correct
   img1.onload = function () {
+    console.log("Image 1 loaded successfully");
     const imgWidth = img1.width;
     const imgHeight = img1.height;
     
@@ -22,9 +24,10 @@ background.onload = function () {
     ctx.drawImage(img1, 100, 300, newWidth1, newHeight1);  // Position and size image
 
     // Load the second foreground image (resized to fit the canvas)
-    const img2 = new Image();
-    img2.src = "images/image2.jpg";  // Ensure this is correct
+    const img2 = new Image();  // Declare img2 here
+    img2.src = "images/image2.jpg";  // Ensure this path is correct
     img2.onload = function () {
+      console.log("Image 2 loaded successfully");
       const imgWidth2 = img2.width;
       const imgHeight2 = img2.height;
 
@@ -37,8 +40,3 @@ background.onload = function () {
 
       // Add text on top of canvas
       ctx.font = "28px Arial";
-      ctx.fillStyle = "white";
-      ctx.fillText("Keira - Canvas Scene", 20, 50);  // Text and position
-    };
-  };
-};
