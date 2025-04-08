@@ -18,11 +18,11 @@ background.onload = function () {
   img1.onload = function () {
     console.log("Image 1 loaded successfully");
 
-    // Resize image1 relative to the canvas size (e.g., 20% of the canvas width)
+    // Resize image1 relative to the canvas size (e.g., 30% of the canvas width)
     const imgWidth = img1.width;
     const imgHeight = img1.height;
 
-    const scale1 = Math.min(0.2 * canvas.width / imgWidth, 0.2 * canvas.height / imgHeight);
+    const scale1 = Math.min(0.3 * canvas.width / imgWidth, 0.3 * canvas.height / imgHeight);  // 30% of canvas size
     const newWidth1 = imgWidth * scale1;
     const newHeight1 = imgHeight * scale1;
 
@@ -36,11 +36,11 @@ background.onload = function () {
     img2.onload = function () {
       console.log("Image 2 loaded successfully");
 
-      // Resize image2 relative to the canvas size (e.g., 15% of the canvas width)
+      // Resize image2 relative to the canvas size (e.g., 25% of the canvas width)
       const imgWidth2 = img2.width;
       const imgHeight2 = img2.height;
 
-      const scale2 = Math.min(0.15 * canvas.width / imgWidth2, 0.15 * canvas.height / imgHeight2);
+      const scale2 = Math.min(0.25 * canvas.width / imgWidth2, 0.25 * canvas.height / imgHeight2);  // 25% of canvas size
       const newWidth2 = imgWidth2 * scale2;
       const newHeight2 = imgHeight2 * scale2;
 
@@ -51,7 +51,7 @@ background.onload = function () {
       // Add text on top of canvas
       ctx.font = "28px Arial";
       ctx.fillStyle = "white";
-      ctx.fillText("Keira's Forest Scene", 20, 50);  // Text and position
+      ctx.fillText("Keira - Canvas Scene", 20, 50);  // Text and position
     };
   };
 };
