@@ -7,12 +7,12 @@ background.onload = () => {
   ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
   const img1 = new Image();
-  img1.src = "images/image1.png";
+  img1.src = "images/image1.jpg";
   img1.onload = () => {
     ctx.drawImage(img1, 100, 300, 200, 250);
 
     const img2 = new Image();
-    img2.src = "images/image2.png";
+    img2.src = "images/image2.jpg";
     img2.onload = () => {
       ctx.drawImage(img2, 500, 250, 150, 150);
 
