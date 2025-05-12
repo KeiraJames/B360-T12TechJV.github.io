@@ -1,0 +1,25 @@
+[
+    {
+        "id": "mercury",
+        "title": "Mercury",
+        "text": "Mercury is the smallest planet in our solar system and closest to the Sun. It has a heavily cratered surface and extreme temperature variations.",
+        "image": "images/planets/mercury.png",
+        "audio": "audio/facts/mercury_facts.mp3",
+        "soundEffect": null
+    },
+    {
+        "id": "venus",
+        "title": "Venus",
+        "text": "Venus is the second planet from the Sun and is similar in size to Earth. It has a thick, toxic atmosphere that traps heat, making it the hottest planet.",
+        "image": "images/planets/venus.png",
+        "audio": "audio/facts/venus_facts.mp3"
+    },
+    {
+        "id": "earth",
+        "title": "Earth",
+        "text": "Our home planet, Earth, is the third planet from the Sun and the only known place to support life. It has liquid water on its surface and a protective atmosphere.",
+        "image": "images/planets/earth.png",
+        "audio": "audio/facts/earth_facts.mp3"
+    }
+   
+]
