@@ -23,6 +23,7 @@
 Projects hosted here:
 *   **AstroLearner PWA:** [https://KeiraJames.github.io/final_proj/](https://KeiraJames.github.io/final_proj/)
 *   **Scene Project:** [https://KeiraJames.github.io/scene_proj/](https://KeiraJames.github.io/scene_proj/)
+*   **Calculator Project:** [https://KeiraJames.github.io/scene_proj/](https://KeiraJames.github.io/savings_calculator_proj/)
 
 </div>
 
