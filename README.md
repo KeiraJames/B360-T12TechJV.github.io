@@ -21,11 +21,9 @@ Welcome to my GitHub profile page! Here you can find some of the projects I've b
 <!-- ABOUT ME / HOME SECTION -->
 <div id="about-me">
 
-projects hosted here:
+Projects hosted here:
 *   **AstroLearner PWA:** [https://KeiraJames.github.io/final_proj/](https://KeiraJames.github.io/final_proj/)
 *   **Scene Project:** [https://KeiraJames.github.io/scene_proj/](https://KeiraJames.github.io/scene_proj/)
-
-Feel free to connect! [Optional: Link to LinkedIn or other professional profile]
 
 </div>
 
@@ -36,7 +34,7 @@ Feel free to connect! [Optional: Link to LinkedIn or other professional profile]
 
 ## 🚀 AstroLearner PWA (final_proj)
 
-AstroLearner is an interactive Progressive Web App designed to take users on an educational journey through our Solar System. Discover fascinating facts about planets, moons, and other celestial bodies, complete with visuals and audio narration.
+AstroLearner is an interactive Progressive Web App designed to take users on an educational journey through our Solar System. Discover fascinating facts about planets, moons, and suns, complete with visuals and audio narration.
 
 **Key Features:**
 *   **Interactive Learning:** Select celestial bodies from a menu to view information.
@@ -57,9 +55,6 @@ AstroLearner is an interactive Progressive Web App designed to take users on an 
 **Live Demo:**
 ➡️ [**Launch AstroLearner PWA**](https://KeiraJames.github.io/final_proj/)
 
-**Source Code Repository:**
-➡️ [**KeiraJames/final_proj**](https://github.com/KeiraJames/final_proj)
-*(Note: Replace with the actual link if your `final_proj` is in a separate repository. If it's just a folder within `KeiraJames.github.io`, this link would point to that folder).*
 
 **Screenshots:**
 *(To add screenshots: 1. Take screenshots. 2. Upload them to your `KeiraJames.github.io` repository, perhaps in an `assets/screenshots/final_proj/` folder. 3. Update the paths below.)*
@@ -67,7 +62,7 @@ AstroLearner is an interactive Progressive Web App designed to take users on an 
 ![AstroLearner Main Screen](assets/screenshots/final_proj/astro_main.png)
 ![AstroLearner Planet View](assets/screenshots/final_proj/astro_planet.png) 
 -->
-(Screenshots coming soon!)
+
 
 </div>
 
