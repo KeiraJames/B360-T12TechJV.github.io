@@ -3,101 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[App Name] - [Your App's Tagline]</title>
-    <link rel="stylesheet" href="promo_style.css">
-    <!-- You might also link to your main app's CSS if you want to share styles -->
-    <!-- <link rel="stylesheet" href="../css/main_style.css"> -->
+    <title>AstroLearner - Explore the Cosmos!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8; /* Light blue-grey background */
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        header h1 {
+            color: #2c3e50; /* Dark blue */
+            margin-bottom: 5px;
+        }
+        header p {
+            color: #555;
+            font-size: 1.1em;
+        }
+        .screenshot {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .features h2, .get-started h2 {
+            color: #16a085; /* Teal color */
+            margin-top: 30px;
+        }
+        .features ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .features li {
+            margin-bottom: 10px;
+        }
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+            padding: 12px 25px;
+            background-color: #3498db; /* Bright blue */
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #2980b9; /* Darker blue */
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>[App Name]</h1>
-            <p class="tagline">[Your App's Catchy Tagline, e.g., "Simplify Your Life, One Click at a Time!"]</p>
-        </div>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Welcome to AstroLearner!</h1>
+            <p>Your interactive guide to exploring the wonders of the universe.</p>
+        </header>
 
-    <section id="hero">
-        <div class="container">
-            <h2>Unlock [Benefit] with [App Name] Today!</h2>
-            <p>[Briefly explain the core value proposition, e.g., "The simplest way to manage [Task] and boost your [Outcome]. Say goodbye to [Pain Point]!"]</p>
-            <!-- Optional: A large image or a placeholder for a video -->
-            <img src="images/hero-image.png" alt="[App Name] in action" class="hero-image">
-            <a href="[Link to your main app - e.g., ../index.html or live URL]" class="cta-button">Launch [App Name] Now!</a>
-        </div>
-    </section>
+        <section class="introduction">
+            <p>AstroLearner is a fun and engaging web application designed to help you learn about planets, stars, constellations, and more. Dive into the cosmos and expand your astronomical knowledge!</p>
+            <!-- Replace with an actual screenshot of your app's main interface -->
+            <img src="images/astrolearner_main_screen.png" alt="AstroLearner Main Interface" class="screenshot">
+        </section>
 
-    <section id="features">
-        <div class="container">
-            <h2>Why Choose [App Name]?</h2>
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <img src="images/icon-feature1.png" alt="Feature 1 Icon" class="feature-icon">
-                    <h3>✨ [Feature 1 Name]</h3>
-                    <p>[Brief description of feature 1 and its benefit. Keep it concise.]</p>
-                </div>
-                <div class="feature-item">
-                    <img src="images/icon-feature2.png" alt="Feature 2 Icon" class="feature-icon">
-                    <h3>🚀 [Feature 2 Name]</h3>
-                    <p>[Brief description of feature 2 and its benefit.]</p>
-                </div>
-                <div class="feature-item">
-                    <img src="images/icon-feature3.png" alt="Feature 3 Icon" class="feature-icon">
-                    <h3>📊 [Feature 3 Name]</h3>
-                    <p>[Brief description of feature 3 and its benefit.]</p>
-                </div>
-                <div class="feature-item">
-                    <img src="images/icon-secure.png" alt="Secure Icon" class="feature-icon">
-                    <h3>🔒 [Feature 4, e.g., Secure & Reliable]</h3>
-                    <p>[Brief description, e.g., "Your data is safe with us."]</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="features">
+            <h2>Key Features:</h2>
+            <ul>
+                <li><strong>Interactive Planet Explorer:</strong> Learn fascinating facts about each planet in our solar system.</li>
+                <li><strong>Constellation Guide:</strong> Discover major constellations and how to find them in the night sky.</li>
+                <li><strong>Space Quiz:</strong> Test your knowledge with fun and challenging astronomy quizzes.</li>
+                <li><strong>Beautiful Imagery:</strong> Enjoy stunning visuals of celestial objects.</li>
+                <!-- Add 1-2 more key features if you have them -->
+            </ul>
+             <!-- Replace with another relevant screenshot -->
+            <img src="images/astrolearner_planet_view.png" alt="AstroLearner Planet Detail View" class="screenshot">
+        </section>
 
-    <section id="screenshots">
-        <div class="container">
-            <h2>See [App Name] in Action</h2>
-            <div class="screenshot-gallery">
-                <div class="screenshot-item">
-                    <img src="images/screenshot1.png" alt="Screenshot 1: [Description]">
-                    <p>[Caption for Screenshot 1, e.g., "Our clean and intuitive dashboard."]</p>
-                </div>
-                <div class="screenshot-item">
-                    <img src="images/screenshot2.png" alt="Screenshot 2: [Description]">
-                    <p>[Caption for Screenshot 2, e.g., "Easily [Perform a Key Action]."]</p>
-                </div>
-                <div class="screenshot-item">
-                    <img src="images/screenshot3.png" alt="Screenshot 3: [Description]">
-                    <p>[Caption for Screenshot 3, e.g., "Track [Important Metric]."]</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="get-started">
+            <h2>How to Get Started:</h2>
+            <p>It's easy to begin your cosmic journey with AstroLearner:</p>
+            <ol>
+                <li>Simply click the button below to launch the AstroLearner web application in your browser.</li>
+                <li>Explore the different sections and start learning!</li>
+                <li>For the best experience on mobile or desktop, look for an "Install App" or "Add to Home Screen" option in your browser to use AstroLearner like a native app.</li>
+            </ol>
+            <a href="../index.html" class="cta-button">Launch AstroLearner!</a>
+            <p style="text-align: center; font-size: 0.9em; color: #666;">(No download or installation required - it's all in your browser!)</p>
+        </section>
 
-    <section id="get-started">
-        <div class="container">
-            <h2>Ready to Get Started?</h2>
-            <p>Experience the power and simplicity of [App Name] right in your browser.</p>
-            <p>
-                Our app is a Progressive Web App (PWA). For the best experience, you can "install" it to your
-                desktop or mobile home screen directly from your browser! Look for an install icon
-                in the address bar or an "Add to Home Screen" option in your browser's menu.
-            </p>
-            <a href="[Link to your main app - e.g., ../index.html or live URL]" class="cta-button large-cta">Launch [App Name]!</a>
-            <p class="subtle-note">No downloads, no complicated setup. Just click and go!</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>© [Current Year] [Your Name/Company Name]. All Rights Reserved.</p>
-            <p>
-                <a href="[Link to User Documentation if you have one, e.g., ../README.md or ../docs/user_guide.html]">User Guide</a> |
-                <a href="[Link to Privacy Policy if applicable]">Privacy Policy</a> |
-                <a href="[Link to Terms of Service if applicable]">Terms of Service</a>
-            </p>
-        </div>
-    </footer>
-
+        <footer>
+            <p>© [Current Year] AstroLearner. Happy Exploring!</p>
+            <!-- If you have a user guide/README, link it: -->
+            <!-- <p><a href="../README.md">User Guide</a></p> -->
+        </footer>
+    </div>
 </body>
 </html>
