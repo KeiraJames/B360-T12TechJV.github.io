@@ -4,13 +4,13 @@ window.onload = function() {
     const ctx = canvas.getContext('2d');
 
     // --- Scene Title and Your Name ---
-    const sceneTitle = "Enchanted Forest"; // <<< CHANGE THIS TO YOUR SCENE TITLE
-    const yourName = "Keira James";       // <<< CHANGE THIS TO YOUR NAME
+    const sceneTitle = "Enchanted Forest"; 
+    const yourName = "Keira James";       
 
-    // --- Image Paths (make sure these match your files in the 'images' subfolder) ---
-    const backgroundImagePath = 'images/forest_background.jpg'; // <<< REPLACE
-    const foregroundImage1Path = 'images/deer.png';             // <<< REPLACE (PNG for transparency is good)
-    const foregroundImage2Path = 'images/fairy.png';            // <<< REPLACE
+    // --- Image Paths---
+    const backgroundImagePath = 'images/background.jpg'; 
+    const foregroundImage1Path = 'images/foreground1.jpg';             
+    const foregroundImage2Path = 'images/foreground2.jpg';            
 
     // --- Load and Draw Background Image ---
     const backgroundImg = new Image();
@@ -73,14 +73,14 @@ window.onload = function() {
     // --- Function to Add Text ---
     function addText() {
         // Scene Title
-        ctx.font = "bold 36px 'Arial', sans-serif"; // <<< EXPERIMENT WITH FONTS
-        ctx.fillStyle = "rgba(255, 255, 255, 0.9)";    // <<< EXPERIMENT WITH COLORS (white with slight transparency)
+        ctx.font = "bold 36px 'Arial', sans-serif"; //
+        ctx.fillStyle = "rgba(255, 255, 255, 0.9)";    // 
         ctx.textAlign = "center";
         ctx.fillText(sceneTitle, canvas.width / 2, 50); // Position at top-center
 
         // Your Name
-        ctx.font = "italic 20px 'Verdana', sans-serif"; // <<< EXPERIMENT
-        ctx.fillStyle = "rgba(230, 230, 250, 0.85)";        // <<< EXPERIMENT (light lavender with transparency)
+        ctx.font = "italic 20px 'Verdana', sans-serif"; // 
+        ctx.fillStyle = "rgba(230, 230, 250, 0.85)";        // <<< light lavender with transparency)
         ctx.textAlign = "right";
         ctx.fillText(`By: ${yourName}`, canvas.width - 20, canvas.height - 20); // Position at bottom-right
     }
@@ -94,4 +94,4 @@ window.onload = function() {
         }
     }, 3000); // Draw text after 3 seconds if images are slow/failed
 
-}; // End of window.onload
+}; 
