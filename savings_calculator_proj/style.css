@@ -1,0 +1,170 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #E6E0F8; /* Very light lilac background */
+    /* Optional: You could find a subtle pattern or gradient with lilacs and soft greens */
+    /* background-image: url('images/soft-lilac-pattern.png'); */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: #524A7D; /* Darker, muted purple for main text */
+}
+
+.calculator-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Almost opaque white for good readability */
+    padding: 35px 45px; /* Slightly more padding */
+    border-radius: 30px; /* Softer, more rounded corners */
+    box-shadow: 0 8px 25px rgba(128, 100, 162, 0.2); /* Soft purple shadow */
+    text-align: center;
+    max-width: 600px; 
+    width: 100%;
+    margin-top: 40px; /* More space from top */
+    margin-bottom: 40px;
+    border: 2px solid #D1C4E9; /* Soft lilac border */
+}
+
+.header-icon { 
+    width: 100px; 
+    margin-bottom: -10px; 
+    position: relative; 
+    z-index: 1;
+}
+
+h1 {
+    font-family: 'Comic Neue', cursive; /* Keeping the playful font for contrast */
+    color: #8E44AD; /* Medium Purple for title */
+    font-size: 2.8em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 2px rgba(220, 210, 240, 0.7); /* Very light lilac shadow */
+}
+
+.subtitle {
+    color: #7B6FAC; /* Muted purple for subtitle */
+    font-size: 1.1em;
+    margin-bottom: 35px;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Slightly more gap */
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700; /* Bold Nunito */
+    margin-bottom: 7px;
+    color: #6A5ACD; /* Slate Blue / Medium Purple */
+}
+
+.form-group input[type="number"] {
+    width: calc(100% - 24px); 
+    padding: 12px; 
+    border: 1px solid #C5B4E3; /* Lighter lilac border for inputs */
+    border-radius: 10px; /* Softer input corners */
+    font-size: 1em;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.04);
+    background-color: #F9F7FF; /* Very light off-white/lilac tint */
+    color: #4A3F73;
+}
+
+.form-group input[type="number"]:focus {
+    outline: none;
+    border-color: #9B59B6; /* Deeper lilac for focus */
+    box-shadow: 0 0 0 2px rgba(155, 89, 182, 0.2);
+}
+
+
+.radio-group {
+    display: flex;
+    gap: 20px; /* More space for radio buttons */
+    align-items: center;
+    padding-top: 5px;
+}
+
+.radio-label {
+    font-weight: normal !important; 
+    margin-bottom: 0 !important;
+    color: #524A7D; /* Match main text */
+}
+
+input[type="radio"] {
+    margin-right: 6px;
+    accent-color: #9B59B6; /* Lilac/Purple for radio button */
+    transform: scale(1.1); /* Slightly larger radio */
+}
+
+
+#calculateButton {
+    background-color: #A06CD5; /* Main Lilac/Purple */
+    color: white;
+    border: none;
+    padding: 14px 30px; 
+    font-size: 1.15em;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif; /* Match body font */
+    letter-spacing: 0.5px;
+    border-radius: 30px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 25px;
+    box-shadow: 0 4px 8px rgba(128, 100, 162, 0.25);
+}
+
+#calculateButton:hover {
+    background-color: #8E44AD; /* Darker Purple */
+    transform: translateY(-2px);
+}
+
+.results-area {
+    margin-top: 35px;
+    padding: 25px;
+    background-color: rgba(245, 240, 255, 0.9); /* Very light lilac for results area */
+    border-radius: 20px; /* Softer corners */
+    border: 1px dashed #B39DDB; /* Medium lilac dashed border */
+}
+
+.results-area h2 {
+    font-family: 'Comic Neue', cursive;
+    color: #7E57C2; /* Deep Purple */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.result-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px; /* More space */
+    margin-top: 15px;
+}
+
+.result-graphic-img { 
+    width: 90px; /* Adjust for your treasure chest image */
+    height: auto;
+    opacity: 0.9; /* Slightly softer image */
+}
+
+.result-text p {
+    margin: 8px 0;
+    font-size: 1.1em;
+    text-align: left;
+    color: #4527A0; /* Deeper purple for result text */
+}
+
+.result-text strong {
+    color: #651FFF; /* Bright Accent Purple */
+    font-size: 1.2em;
+    font-weight: 700;
+}
