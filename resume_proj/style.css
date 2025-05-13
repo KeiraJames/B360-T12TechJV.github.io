@@ -1,0 +1,182 @@
+/* Import a cute, rounded font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+body {
+    padding-top: 70px; /* Account for fixed-top navbar height */
+    background-color: #E0F7FA; /* Very Light Cyan - sky blue */
+    font-family: 'Quicksand', sans-serif;
+    color: #5D4037; /* Soft Brown */
+}
+
+/* Navbar Styling */
+.navbar.bg-light-blue {
+    background-color: #B3E5FC !important; /* Light Sky Blue */
+    border-bottom: 2px solid #81D4FA; /* Slightly darker blue for accent */
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive; /* Cutesy script font for brand */
+    color: #0277BD !important; /* Darker Sky Blue for brand text */
+    font-size: 1.5rem;
+}
+.navbar-brand img {
+    filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.2));
+}
+
+.navbar-nav .nav-link {
+    color: #0288D1 !important; /* Sky Blue for nav links */
+    font-weight: 500;
+    margin: 0 5px;
+    padding: 0.5rem 1rem;
+    border-radius: 20px; /* Rounded nav links */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background-color: #FFF9C4; /* Pastel Yellow for hover/active */
+    color: #01579B !important; /* Darker blue on hover/active */
+    font-weight: 700;
+}
+
+/* Main Content */
+.content-container {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 123, 255, 0.1); /* Soft blue shadow */
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border: 6px solid #FFF9C4; /* Pastel Yellow border */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: #E1F5FE; /* Light blue bg for profile pic if transparent */
+}
+.profile-pic:hover {
+    transform: scale(1.05) rotate(2deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.resume-section {
+    padding: 25px;
+    margin-top: 25px;
+    border-left: 6px solid #81D4FA; /* Light Sky Blue accent border */
+    background-color: #FDFEFE; /* Almost white with a hint of blue */
+    border-radius: 10px;
+}
+.resume-section .card-body {
+    padding: 1.5rem;
+}
+
+.resume-section .card-title {
+    font-family: 'Pacifico', cursive;
+    color: #0288D1; /* Sky Blue for section titles */
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+}
+
+.section-title i {
+    color: #FFB74D; /* Pastel Orange for icons */
+    margin-right: 10px;
+}
+
+.job-logo {
+    width: 35px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.experience-item h4, .education-item h4 {
+    color: #0277BD; /* Darker Sky Blue for headings */
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.experience-item p.text-muted, .education-item p.text-muted {
+    font-size: 0.9rem;
+    color: #78909C !important; /* Muted Blue-Grey */
+}
+.experience-item ul li, .education-item ul li {
+    margin-bottom: 0.3rem;
+}
+
+
+/* Skills Badges - Custom Cinnamoroll Colors */
+.badge {
+    font-size: 0.95em;
+    font-weight: 500;
+    padding: 0.6em 0.9em;
+    margin: 0.2em;
+    border-radius: 15px; /* Pill-shaped badges */
+    border: 1px solid transparent;
+}
+
+.bg-sky-blue { background-color: #81D4FA; color: #01579B; border-color: #4FC3F7;}
+.bg-light-pink { background-color: #F8BBD0; color: #AD1457; border-color: #F48FB1;}
+.bg-cinnamon-brown { background-color: #D2B48C; color: #5D4037; border-color: #BCAAA4;} /* Tan/Light Brown */
+.bg-pastel-yellow { background-color: #FFF9C4; color: #795548; border-color: #FFF59D;}
+.bg-pastel-green { background-color: #C8E6C9; color: #2E7D32; border-color: #A5D6A7;}
+
+/* Portfolio Carousel */
+.portfolio-img {
+    height: 450px; /* Adjust as needed for Cinnamoroll images */
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #FFF9C4; /* Pastel Yellow border for images */
+}
+
+.carousel-caption {
+    background-color: rgba(2, 136, 209, 0.7) !important; /* Semi-transparent Sky Blue */
+    border-radius: 8px;
+    padding: 1rem !important;
+}
+.carousel-caption h5 {
+    font-family: 'Pacifico', cursive;
+    color: #FFFDE7; /* Creamy white text */
+}
+.carousel-caption p {
+    color: #E1F5FE; /* Very light blue text */
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #0288D1; /* Sky Blue for indicators */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.carousel-indicators .active {
+    background-color: #FFF9C4; /* Pastel Yellow for active indicator */
+}
+
+
+/* Contact Section Alert */
+.alert-pastel-pink {
+    background-color: #FCE4EC; /* Very light pink */
+    border-color: #F8BBD0;
+    color: #D81B60; /* Darker Pink for text */
+}
+
+/* Footer Styling */
+.footer-cinnamoroll {
+    background-color: #81D4FA; /* Light Sky Blue */
+    color: #01579B; /* Darker Blue for text */
+    font-weight: 500;
+}
+.footer-cinnamoroll p {
+    margin-bottom: 0;
+}
+
+
+/* Smooth scrolling for navbar links */
+html {
+  scroll-behavior: smooth;
+}
