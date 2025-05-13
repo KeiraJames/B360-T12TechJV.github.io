@@ -1,19 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keira's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keira James' Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kalam', cursive;
+            background-color: #FFF0F5; /* Light lavender blush */
+            /* Optional background image: */
+            /* background-image: url('images/your-floral-background.png'); */
+            /* background-size: cover; */
+            margin: 0;
+            padding: 40px 20px; /* Added more top/bottom padding */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: #5D4037; 
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 40px; /* Increased space */
+        }
+
+        .header h1 {
+            font-family: 'Gaegu', cursive;
+            font-size: 3.8em; /* Slightly larger */
+            color: #FF69B4; 
+            text-shadow: 2px 2px #FFD1DC; 
+            margin: 0 0 10px 0; /* Added bottom margin */
+        }
+
+        .header p {
+            font-size: 1.3em; /* Slightly larger */
+            color: #795548; 
+        }
+
+        .main-piggy {
+            width: 160px; /* Adjust size */
+            height: auto;
+            margin-bottom: 20px; /* Space between piggy and title */
+            animation: gentleFloat 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes gentleFloat {
+            0% {transform: translateY(0px);}
+            50% {transform: translateY(-15px);}
+            100% {transform: translateY(0px);}
+        }
+
+        .projects-list-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for the list */
+            padding: 25px 30px;
+            border-radius: 20px;
+            border: 2px dashed #FFB6C1; /* Light pink dashed border */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            max-width: 500px; /* Adjust as needed */
+            width: 90%;
+        }
+
+        .projects-list-container h2 {
+            font-family: 'Gaegu', cursive;
+            color: #DE3163; /* Cerise pink */
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 1px solid #FFD1DC; /* Light pink underline */
+            padding-bottom: 10px;
+        }
+
+        .projects-list {
+            list-style: none; /* Remove default bullet points */
+            padding: 0;
+            margin: 0;
+        }
+
+        .projects-list li {
+            margin-bottom: 15px; /* Space between list items */
+        }
+
+        .projects-list li a {
+            display: inline-block; /* Allows padding and better click area */
+            background-color: #FFC0CB; /* Pink */
+            color: #4A3F35; /* Darker brown for link text */
+            padding: 12px 25px;
+            border-radius: 25px; /* Pill shape */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: 1px solid #FFB6C1;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .projects-list li a:hover {
+            background-color: #FFB6C1; /* Lighter pink on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .list-piggy-decorator {
+            width: 35px; /* Small piggy icon */
+            margin-right: 10px;
+            vertical-align: middle; /* Align with text */
+        }
+
+        .footer {
+            margin-top: 50px; /* More space before footer */
+            font-size: 0.9em;
+            color: #8D6E63;
+        }
+    </style>
 </head>
 <body>
-  <h1>Keira's Portfolio</h1>
-  
-  <h2>My Projects:</h2>
-  <ul>
-    <li><a href="scene_proj/index.html">Scene Project</a></li>
-    <li><a href="final_proj/index.html">Scene Project</a></li>
- 
-  </ul>
+
+    <div class="header">
+        <!-- Replace with your main piggy image path -->
+        <img src="images/cute-main-piggy.png" alt="Cute Piggy Waving" class="main-piggy">
+        <h1>Keira's Creative Corner!</h1>
+        <p>Oink oink! Check out my fun projects below! 🐷🌷</p>
+    </div>
+
+    <div class="projects-list-container">
+        <h2>My Projects 🌟</h2>
+        <ul class="projects-list">
+            <li>
+                <a href="scene_proj/index.html">
+                    <!-- Optional: Replace with a very small, relevant icon or piggy -->
+                    <img src="images/mini-piggy-icon.png" alt="piggy" class="list-piggy-decorator">
+                    Scene Project
+                </a>
+            </li>
+            <li>
+                <a href="final_proj/index.html">
+                    <img src="images/mini-piggy-icon.png" alt="piggy" class="list-piggy-decorator">
+                    AstroLearner PWA
+                </a>
+            </li>
+            <!-- Add more list items for other projects -->
+            <!-- Example:
+            <li>
+                <a href="another_project_folder/">
+                    <img src="images/mini-piggy-icon.png" alt="piggy" class="list-piggy-decorator">
+                    My Awesome Game
+                </a>
+            </li>
+            -->
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>© <span id="currentYear"></span> Keira James. Sprinkled with piggy magic! ✨</p>
+    </div>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 
 </body>
 </html>
