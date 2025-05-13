@@ -18,6 +18,7 @@ Projects hosted here:
 *   **Calculator Project:** [https://KeiraJames.github.io/savings_calculator_proj/](https://KeiraJames.github.io/savings_calculator_proj/)
 *   **Puppy Playtime:** [https://KeiraJames.github.io/puppy_playtime/](https://KeiraJames.github.io/puppy_playtime/)
 *   **Data Viz:** [https://KeiraJames.github.io/data_vis_proj/](https://KeiraJames.github.io/data_vis_proj/)
+*   **Resume Viz:** [https://KeiraJames.github.io/resume_proj/](https://KeiraJames.github.io/resume_proj/)
 
 </div>
 
