@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wick Editor Animation: Forest Scene</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: inline-block; /* So it doesn't take full width */
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .animation-container img,
+        .animation-container video {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .download-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .download-link:hover {
+            background-color: #2980b9;
+        }
+        p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Peaceful Forest Path Animation</h1>
+
+        <div class="animation-container">
+            <h2>Animation Preview (GIF)</h2>
+            <img src="forest_scene.gif" alt="Animated Forest Scene GIF">
+            <!-- OR if you prefer to embed the video -->
+            <!-- <h2>Animation Preview (Video)</h2> -->
+            <!-- <video controls width="800"> -->
+            <!--     <source src="forest_scene.mp4" type="video/mp4"> -->
+            <!--     Your browser does not support the video tag. -->
+            <!-- </video> -->
+        </div>
+
+        <p>This scene was created using the Wick Editor, demonstrating layers and tween animations.</p>
+
+        <a href="forest_scene.wick" download class="download-link">Download .wick Project File</a>
+
+        <p>
+            <strong>Scene Details:</strong><br>
+            - A cute fox wanders across a forest path.<br>
+            - Autumn leaves gently fall in the foreground.<br>
+            - The animation is designed to loop smoothly over 3 seconds (90 frames at 30fps).
+        </p>
+    </div>
+</body>
+</html>
