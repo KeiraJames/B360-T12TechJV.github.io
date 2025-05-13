@@ -5,14 +5,6 @@
 #### Email: Keira.james35@bcmail.cuny.edu
 ---
 
-<!-- Tab Navigation -->
-<div id="project-tabs" align="center" style="margin-bottom: 25px;">
-  <a href="#about-me" style="text-decoration: none; margin: 0 5px;"><button style="padding: 8px 15px; cursor: pointer; border: 1px solid #555; background-color: #333; color: white; border-radius: 5px;">About Me</button></a>
-  <a href="#astro-learner" style="text-decoration: none; margin: 0 5px;"><button style="padding: 8px 15px; cursor: pointer; border: 1px solid #555; background-color: #333; color: white; border-radius: 5px;">AstroLearner PWA</button></a>
-  <a href="#scene-project" style="text-decoration: none; margin: 0 5px;"><button style="padding: 8px 15px; cursor: pointer; border: 1px solid #555; background-color: #333; color: white; border-radius: 5px;">Scene Project</button></a>
-  <!-- Add more buttons here for other projects, following the same pattern -->
-</div>
-
 ---
 
 <!-- Tab Content Sections -->
