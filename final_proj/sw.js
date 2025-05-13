@@ -7,9 +7,6 @@ const urlsToCache = [
     '/manifest.json',
     '/images/icons/icon-192.png',
     '/images/icons/icon-512.png',
-    // Add paths to essential images/sounds you want cached initially
-    // e.g., '/images/planets/earth.jpg', '/audio/sfx/click.wav'
-    // Consider caching the JSON data file too: '/data/solar_system_data.json'
 ];
 
 // Install service worker and cache static assets
