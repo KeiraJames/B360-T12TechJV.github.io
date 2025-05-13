@@ -1,9 +1,8 @@
+
+
+#Keira James 
 # KeiraJames.github.io
 #### Email: Keira.james35@bcmail.cuny.edu
-# Hi, I'm Keira James 👋
-
-Welcome to my GitHub profile page! Here you can find some of the projects I've been working on.
-
 ---
 
 <!-- Tab Navigation -->
