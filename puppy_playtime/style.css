@@ -1,0 +1,151 @@
+/* Import Cute Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    font-family: 'Patrick Hand', cursive; /* Or 'Kalam' or 'Gaegu' */
+    background-color: #FADADD; /* Soft Pink background (like a sunset sky) */
+    color: #795548; /* Soft Brown text */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #FFF0F5; /* Lavender Blush - very light pinkish white */
+    padding: 30px;
+    border-radius: 25px; /* Even more rounded */
+    box-shadow: 0 8px 20px rgba(136, 74, 57, 0.12); /* Softer, slightly larger shadow */
+    text-align: center;
+    max-width: 900px;
+}
+
+h1 {
+    color: #E57373; /* Soft Coral/Rosy Pink */
+    margin-bottom: 25px;
+    font-size: 2.8em;
+    text-shadow: 1px 1px 2px #FADADD;
+    animation: subtleBreathe 5s ease-in-out infinite;
+}
+
+@keyframes subtleBreathe {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: 2px dashed #D7CCC8; /* Lightest soft brown/grey for dash */
+    border-radius: 20px; /* More rounded fieldsets */
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #FFFAF0; /* Floral White - very light creamy */
+    min-width: 210px;
+    box-shadow: 0 2px 5px rgba(136, 74, 57, 0.08);
+}
+
+legend {
+    font-weight: bold;
+    color: #A1887F; /* Muted Soft Brown */
+    padding: 0 10px;
+    font-size: 1.2em;
+    font-family: 'Kalam', cursive; /* Different cute font for legend */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #8D6E63;
+    font-size: 1.05em;
+    cursor: pointer; /* Indicate labels are clickable */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 7px;
+    accent-color: #FFB6C1; /* Light Pink for accents */
+    transform: scale(1.15);
+    vertical-align: middle; /* Align with text better */
+    transition: transform 0.2s ease;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+    transform: scale(1.25);
+}
+
+
+input[type="range"] {
+    width: 80%;
+    accent-color: #FFC0CB; /* Pink for slider track */
+    --thumb-bg: #E57373;
+    margin-top: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background-color: var(--thumb-bg);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-top: -7px;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  cursor: grab;
+}
+input[type="range"]::-moz-range-thumb {
+  background-color: var(--thumb-bg);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  cursor: grab;
+}
+
+
+button {
+    background-color: #FFB6C1; /* Light Pink */
+    color: #795548;
+    border: 1px solid #F8BBD0;
+    padding: 12px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 1em;
+    margin: 5px;
+    transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 3px 6px rgba(136, 74, 57, 0.1);
+}
+
+button:hover {
+    background-color: #F48FB1;
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 5px 10px rgba(136, 74, 57, 0.15);
+}
+
+button:active {
+    transform: translateY(0px) scale(1);
+    box-shadow: 0 2px 4px rgba(136, 74, 57, 0.1);
+}
+
+#puppyCanvas {
+    border: 4px dotted #E6BFB3; /* Dotted border */
+    border-radius: 20px;
+    background-color: #FFF9C4; /* Very Pale Yellow (like a faint sun) */
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 6px 15px rgba(136, 74, 57, 0.12);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Playtime Paradise 🌅🐾</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Puppy Playtime Paradise 🌅🐾</h1>
+
+        <div class="controls">
+            <fieldset>
+                <legend>✨ Choose a Scene ✨</legend>
+                <label><input type="radio" name="background" value="park" checked> 🌳 Park Fun</label>
+                <label><input type="radio" name="background" value="livingroom"> 🏠 Cozy Living Room</label>
+                <label><input type="radio" name="background" value="beach"> 🏖️ Sunset Beach</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>🐾 Puppy's Adventure 🐾</legend>
+                <label for="puppyX">Puppy's Spot (Left/Right):</label>
+                <input type="range" id="puppyX" name="puppyX" min="0" max="430" value="50">
+            </fieldset>
+
+            <fieldset>
+                <legend>🧸 Puppy's Favorite Toys 🧸</legend>
+                <label><input type="checkbox" id="showBall" name="item1" checked> 🎾 Bouncy Ball!</label>
+                <label><input type="checkbox" id="showBone" name="item2"> 🦴 Yummy Bone</label>
+                <label><input type="checkbox" id="showFrisbee" name="item3"> 🥏 Flying Frisbee</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>🔊 Happy Puppy Sounds 🔊</legend>
+                <button id="soundBark">🐾 Woof!</button>
+                <button id="soundSqueak">🧸 Squeak!</button>
+                <button id="soundPant">😊 Happy Pant!</button>
+            </fieldset>
+        </div>
+
+        <canvas id="puppyCanvas" width="500" height="350"></canvas>
+
+        <!-- Hidden audio elements -->
+        <audio id="barkSound" src="sounds/bark.mp3"></audio>
+        <audio id="squeakSound" src="sounds/squeak_toy.mp3"></audio>
+        <audio id="pantSound" src="sounds/happy_pant.mp3"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
