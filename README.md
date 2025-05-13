@@ -21,15 +21,7 @@ Welcome to my GitHub profile page! Here you can find some of the projects I've b
 <!-- ABOUT ME / HOME SECTION -->
 <div id="about-me">
 
-## 👩‍💻 About Me
-
-Hello! I'm Keira, a developer passionate about creating interactive and engaging web experiences. I enjoy exploring new technologies and building projects that are both fun and educational.
-
-*   🌍 Based in [Your City/Region - Optional]
-*   💡 Interested in: Web Development, Progressive Web Apps, Interactive Learning, [Your Other Interests]
-*   🌱 Currently learning: [Any new technologies or concepts you're exploring]
-
-You can find my projects hosted here:
+projects hosted here:
 *   **AstroLearner PWA:** [https://KeiraJames.github.io/final_proj/](https://KeiraJames.github.io/final_proj/)
 *   **Scene Project:** [https://KeiraJames.github.io/scene_proj/](https://KeiraJames.github.io/scene_proj/)
 
