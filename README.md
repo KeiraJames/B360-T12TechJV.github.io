@@ -56,7 +56,7 @@ AstroLearner is an interactive Progressive Web App designed to take users on an 
 
 
 **Screenshots:**
-*(To add screenshots: 1. Take screenshots. 2. Upload them to your `KeiraJames.github.io` repository, perhaps in an `assets/screenshots/final_proj/` folder. 3. Update the paths below.)*
+
 <!-- 
 ![AstroLearner Main Screen](assets/screenshots/final_proj/astro_main.png)
 ![AstroLearner Planet View](assets/screenshots/final_proj/astro_planet.png) 
@@ -72,29 +72,9 @@ AstroLearner is an interactive Progressive Web App designed to take users on an 
 
 ## 🎬 Scene Project (scene_proj)
 
-This project, `scene_proj`, involves [**describe your project in 1-2 sentences. What was the goal? What does it do? e.g., "creating a 3D scene using WebGL" or "an interactive story with different choices"**].
 
-**Key Features:**
-*   [Specific feature 1 of scene_proj]
-*   [Specific feature 2 of scene_proj]
-*   [If it's visual, describe what users see or interact with]
-
-**Technologies Used:**
-*   [List main technologies, e.g., HTML, CSS, JavaScript, Three.js, A-Frame, etc.]
-
-**Live Demo:**
-➡️ [**View Scene Project**](https://KeiraJames.github.io/scene_proj/)
-
-**Source Code Repository:**
-➡️ [**KeiraJames/scene_proj**](https://github.com/KeiraJames/scene_proj)
-*(Note: Replace with the actual link if `scene_proj` is in a separate repository. If it's just a folder within `KeiraJames.github.io`, this link would point to that folder).*
-
-**Screenshots:**
-*(Upload screenshots to `assets/screenshots/scene_proj/` or similar and update paths.)*
-<!-- 
-![Scene Project View 1](assets/screenshots/scene_proj/scene_view1.png)
 -->
-(Screenshots coming soon!)
+
 
 </div>
 
