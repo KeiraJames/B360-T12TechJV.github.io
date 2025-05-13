@@ -1,0 +1,47 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Softer font */
+    margin: 20px;
+    background-color: #fdf6e3; /* Soft cream/light beige background */
+    color: #5d4037; /* Darker brown text for contrast */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #4e342e; /* Darker, richer brown for headings */
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.chart-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto; /* More spacing */
+    padding: 25px;
+    background-color: #efebe9; /* Light brownish-gray, like parchment */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(80, 50, 30, 0.15); /* Softer brown shadow */
+    border: 1px solid #d7ccc8; /* Subtle border */
+}
+
+canvas {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+}
+
+p {
+    text-align: center;
+    font-size: 0.95em;
+    color: #795548; /* Medium brown for general text */
+    line-height: 1.6;
+}
+
+.dataset-credit {
+    text-align: center;
+    font-size: 0.85em;
+    color: #8d6e63; /* Lighter brown for less emphasis */
+    margin-top: 20px;
+}
