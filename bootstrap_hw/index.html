@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💖 Keira's Cutesy Grid Fun! 💖</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Google Font: Gaegu (like your portfolio) -->
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container adorable-container">
+        <header class="text-center my-4">
+            <h1>✨ Welcome to My Cutesy Grid Playground! ✨</h1>
+            <p class="lead">Let's see how Bootstrap grids make layout super easy and fun! 🎀</p>
+        </header>
+
+        <!-- Example 1: Equal Width Columns -->
+        <section class="grid-section">
+            <h2>🌸 Equal Sparkle Columns 🌸</h2>
+            <p>These columns share space equally! Magic! 🪄</p>
+            <div class="row">
+                <div class="col adorable-col style-1">Star 🌟</div>
+                <div class="col adorable-col style-1">Moon 🌙</div>
+                <div class="col adorable-col style-1">Sun ☀️</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col adorable-col style-1">Cloud ☁️</div>
+                <div class="col adorable-col style-1">Rainbow 🌈</div>
+            </div>
+        </section>
+
+        <!-- Example 2: Specified Column Widths -->
+        <section class="grid-section">
+            <h2>🧁 Sweet Sized Columns 🧁</h2>
+            <p>We can tell columns how much space to take, like picking a cupcake size! 🎂</p>
+            <div class="row">
+                <div class="col-6 adorable-col style-2">I'm a col-6 cutie! (Half width)</div>
+                <div class="col-6 adorable-col style-2">Me too! col-6! (Half width)</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-4 adorable-col style-2">Tiny col-4 treat!</div>
+                <div class="col-8 adorable-col style-2">Bigger col-8 delight!</div>
+            </div>
+        </section>
+
+        <!-- Example 3: Responsive Columns (stacking on smaller screens) -->
+        <section class="grid-section">
+            <h2>🎈 Bouncy Responsive Columns 🎈</h2>
+            <p>These columns play nice on all screens! Resize your window to see them stack! 👇</p>
+            <div class="row">
+                <div class="col-md-4 adorable-col style-3">Puffy Cloud (md-4) ☁️</div>
+                <div class="col-md-4 adorable-col style-3">Fluffy Sheep (md-4) 🐑</div>
+                <div class="col-md-4 adorable-col style-3">Happy Bear (md-4) 🐻</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-3 col-md-6 adorable-col style-3">Item A (lg-3, md-6)</div>
+                <div class="col-lg-3 col-md-6 adorable-col style-3">Item B (lg-3, md-6)</div>
+                <div class="col-lg-6 col-md-12 adorable-col style-3">Item C (lg-6, md-12 - full on medium!)</div>
+            </div>
+        </section>
+
+        <!-- Example 4: Nesting Columns -->
+        <section class="grid-section">
+            <h2> Nested Cuteness </h2>
+            <p>Columns can have little baby columns inside them! 🐣</p>
+            <div class="row">
+                <div class="col-sm-8 adorable-col style-1">
+                    Big Sibling Column (sm-8)
+                    <div class="row mt-2">
+                        <div class="col-6 adorable-col style-2 nested-col">Baby Col 1 (6)</div>
+                        <div class="col-6 adorable-col style-2 nested-col">Baby Col 2 (6)</div>
+                    </div>
+                </div>
+                <div class="col-sm-4 adorable-col style-1">
+                    Other Sibling (sm-4)
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-5 mb-3">
+            <p>Made with Bootstrap & Love by Keira! 💖</p>
+        </footer>
+
+    </div>
+
+    <!-- Bootstrap JS Bundle (Popper.js included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Custom JS (optional) -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+    font-family: 'Gaegu', cursive;
+    background-color: #FFF0F5; /* Lavender Blush */
+    color: #5D4037; /* Dark Brown for text */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.adorable-container h1 {
+    color: #FF69B4; /* Hot Pink */
+    font-weight: 700;
+    text-shadow: 1px 1px #FFD1DC; /* Light Pink shadow */
+}
+
+.adorable-container .lead {
+    color: #795548; /* Lighter Brown */
+    font-size: 1.2em;
+}
+
+.grid-section {
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    border: 2px dashed #FFB6C1; /* Light Pink dashed border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.grid-section h2 {
+    font-family: 'Gaegu', cursive;
+    color: #DE3163; /* Cerise Pink */
+    margin-bottom: 15px;
+    border-bottom: 1px solid #FFD1DC; /* Light pink underline */
+    padding-bottom: 8px;
+    font-size: 2em;
+}
+
+.adorable-col {
+    padding: 20px 15px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners for columns */
+    font-size: 1.1em;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin-bottom: 10px; /* Add some space if they stack */
+}
+
+.adorable-col:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(93, 64, 55, 0.2); /* Softer shadow on hover */
+}
+
+/* Different styles for columns in different sections */
+.adorable-col.style-1 {
+    background-color: #E6E6FA; /* Lavender */
+    border: 1px solid #D8BFD8; /* Thistle */
+    color: #483D8B; /* Dark Slate Blue */
+}
+
+.adorable-col.style-2 {
+    background-color: #AFEEEE; /* Pale Turquoise */
+    border: 1px solid #7FFFD4; /* Aquamarine */
+    color: #008080; /* Teal */
+}
+
+.adorable-col.style-3 {
+    background-color: #FFDAB9; /* PeachPuff */
+    border: 1px solid #FFA07A; /* Light Salmon */
+    color: #A0522D; /* Sienna */
+}
+
+.nested-col {
+    font-size: 0.9em;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1); /* Inner shadow for nested */
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #8D6E63; /* Medium Brown */
+}

@@ -5,52 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Wick Editor Animation: Forest Scene</title>
     <style>
+        /* Forest Theme Variables */
+        :root {
+            --forest-green-dark: #2F4F2F; /* Dark Slate Green - like deep forest shadows */
+            --forest-green-medium: #556B2F; /* Dark Olive Green - like tree leaves */
+            --forest-green-light: #8FBC8F; /* Dark Sea Green - lighter foliage */
+            --earth-brown-dark: #8B4513;   /* Saddle Brown - like tree trunks */
+            --earth-brown-light: #D2B48C;  /* Tan - like dry leaves or path */
+            --sky-blue-pale: #ADD8E6;   /* Light Blue - for a touch of sky */
+            --text-color-light: #F5F5F5; /* Whitesmoke - for text on dark backgrounds */
+            --text-color-dark: #3A3A3A;  /* Dark Grey - for text on light backgrounds */
+        }
+
         body {
-            font-family: sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
-        .container {
-            background-color: #fff;
+            font-family: 'Georgia', serif; /* A more classic, earthy font */
+            margin: 0;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            display: inline-block; /* So it doesn't take full width */
+            background-color: var(--forest-green-light); /* Light green overall background */
+            color: var(--text-color-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
         }
+
+        .container {
+            background-color: var(--earth-brown-light); /* Tan background for the content box */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 900px; /* Limit width for better readability */
+            border: 3px solid var(--earth-brown-dark); /* Dark brown border */
+        }
+
         h1 {
-            color: #2c3e50;
+            color: var(--forest-green-dark);
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px var(--earth-brown-light);
         }
+
+        h2 {
+            color: var(--forest-green-medium);
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--forest-green-light);
+            padding-bottom: 5px;
+            display: inline-block; /* So border only spans text */
+        }
+
         .animation-container img,
         .animation-container video {
             max-width: 100%;
             height: auto;
-            border: 2px solid #ddd;
-            border-radius: 4px;
-            margin-bottom: 15px;
+            border: 4px solid var(--earth-brown-dark); /* Dark brown border for media */
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
+
         .download-link {
             display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 10px 15px;
+            background-color: var(--forest-green-medium); /* Medium green for button */
+            color: var(--text-color-light);
+            padding: 12px 20px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 6px;
             font-weight: bold;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.2s;
+            border: 1px solid var(--forest-green-dark);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+
         .download-link:hover {
-            background-color: #2980b9;
+            background-color: var(--forest-green-dark); /* Darker green on hover */
+            transform: translateY(-2px);
         }
+
         p {
-            margin-top: 20px;
+            margin-top: 15px;
+            color: var(--text-color-dark);
         }
+
+        p strong {
+            color: var(--forest-green-dark);
+        }
+
+        /* Optional: A subtle pattern for the body background */
+        /*
+        body {
+            background-image: url('your-subtle-leaf-pattern.png');
+            background-repeat: repeat;
+        }
+        */
+
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Peaceful Forest Path Animation</h1>
+        <h1>Peaceful Forest Path Animation 🌲🦊</h1>
 
         <div class="animation-container">
             <h2>Animation Preview (GIF)</h2>
@@ -63,14 +118,14 @@
             <!-- </video> -->
         </div>
 
-        <p>This scene was created using the Wick Editor, demonstrating layers and tween animations.</p>
+        <p>This enchanting scene was created using the Wick Editor, demonstrating layers and tween animations with a forest theme.</p>
 
         <a href="forest_scene.wick" download class="download-link">Download .wick Project File</a>
 
         <p>
             <strong>Scene Details:</strong><br>
-            - A cute fox wanders across a forest path.<br>
-            - Autumn leaves gently fall in the foreground.<br>
+            - A cute fox wanders across a sun-dappled forest path.<br>
+            - Autumn leaves gently fall in the foreground, carried by a soft breeze.<br>
             - The animation is designed to loop smoothly over 3 seconds (90 frames at 30fps).
         </p>
     </div>

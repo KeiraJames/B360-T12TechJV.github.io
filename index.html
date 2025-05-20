@@ -15,7 +15,7 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            color: #5D4037; 
+            color: #5D4037;
             text-align: center;
         }
 
@@ -26,14 +26,14 @@
         .header h1 {
             font-family: 'Gaegu', cursive;
             font-size: 3.8em; /* Slightly larger */
-            color: #FF69B4; 
-            text-shadow: 2px 2px #FFD1DC; 
+            color: #FF69B4;
+            text-shadow: 2px 2px #FFD1DC;
             margin: 0 0 10px 0; /* Added bottom margin */
         }
 
         .header p {
             font-size: 1.3em; /* Slightly larger */
-            color: #795548; 
+            color: #795548;
         }
 
         .main-piggy {
@@ -49,15 +49,21 @@
             100% {transform: translateY(0px);}
         }
 
-        .projects-list-container {
-            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for the list */
+        .projects-list-container { /* Renamed for clarity, applies to both project and HW boxes */
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
             padding: 25px 30px;
             border-radius: 20px;
             border: 2px dashed #FFB6C1; /* Light pink dashed border */
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
             max-width: 500px; /* Adjust as needed */
             width: 90%;
+            margin-bottom: 30px; /* Added space between containers */
         }
+
+        .projects-list-container:last-of-type { /* Remove margin from the last container before footer */
+             margin-bottom: 0;
+        }
+
 
         .projects-list-container h2 {
             font-family: 'Gaegu', cursive;
@@ -69,7 +75,7 @@
             padding-bottom: 10px;
         }
 
-        .projects-list {
+        .projects-list { /* Renamed for clarity, applies to both project and HW lists */
             list-style: none; /* Remove default bullet points */
             padding: 0;
             margin: 0;
@@ -115,57 +121,76 @@
 <body>
 
     <div class="header">
-        <!-- Replace with your main piggy image path -->
         <img src="images/my-animated-pig.gif" alt="Cute Piggy Waving" class="main-piggy">
         <h1>Keira's Project Piece!</h1>
-        <p>Check out my class projects below! 🐷🌷</p>
+        <p>Check out my class projects and homework below! 🐷🌷</p>
     </div>
 
     <div class="projects-list-container">
         <h2>My Projects 🌟</h2>
         <ul class="projects-list">
-            
             <li>
-                <a href="scene_proj/index.html">  
+                <a href="scene_proj/index.html">
                     <img src="images/pig-icon.png" alt="piggy" class="list-piggy-decorator">
                     Scene Project
                 </a>
             </li>
-
             <li>
-            <a href="https://KeiraJames.github.io/savings_calculator_proj/">
+                <a href="https://KeiraJames.github.io/savings_calculator_proj/">
                     <img src="images/pig-icon.png" alt="piggy" class="list-piggy-decorator">
                     Calculator Project
                 </a>
            </li>
-
            <li>
-            <a href="https://KeiraJames.github.io/puppy_playtime/">
+                <a href="https://KeiraJames.github.io/puppy_playtime/">
                     <img src="images/pig-icon.png" alt="piggy" class="list-piggy-decorator">
                     Puppy Playtime
                 </a>
            </li>
-            
             <li>
-            <a href="https://KeiraJames.github.io/data_vis_proj/">
+                <a href="https://KeiraJames.github.io/data_vis_proj/">
                     <img src="images/pig-icon.png" alt="piggy" class="list-piggy-decorator">
                     Data Viz Project
                 </a>
            </li>
-
             <li>
-            <a href="https://KeiraJames.github.io/resume_proj/">
+                <a href="https://KeiraJames.github.io/resume_proj/">
                     <img src="images/pig-icon.png" alt="piggy" class="list-piggy-decorator">
                     Resume Project
                 </a>
            </li>
-            
            <li>
                 <a href="https://keirajames.github.io/final_proj/">
                     <img src="images/pig-icon.png" alt="piggy" class="list-piggy-decorator">
                     AstroLearner PWA
                 </a>
             </li>
+        </ul>
+    </div>
+
+    <!-- New Homework Box -->
+    <div class="projects-list-container">
+        <h2>My Homework 📚</h2>
+        <ul class="projects-list">
+            <li>
+                <a href="path/to/your/homework1.html"> <!-- Replace with actual link -->
+                    <img src="images/pig-icon.png" alt="piggy" class="list-piggy-decorator">
+                    Homework 1: Title
+                </a>
+            </li>
+            <li>
+                <a href="path/to/your/homework2.html"> <!-- Replace with actual link -->
+                    <img src="images/pig-icon.png" alt="piggy" class="list-piggy-decorator">
+                    Homework 2: Another Title
+                </a>
+            </li>
+            <li>
+                <a href="https://example.com/homework3"> <!-- Replace with actual link -->
+                    <img src="images/pig-icon.png" alt="piggy" class="list-piggy-decorator">
+                    Homework 3: Web Link
+                </a>
+            </li>
+            <!-- Add more list items for other homework assignments -->
         </ul>
     </div>
 
