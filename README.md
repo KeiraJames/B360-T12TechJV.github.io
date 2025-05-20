@@ -31,5 +31,3 @@ I'm a student passionate about creating cute and functional web experiences. I l
 ---
 
 Thank you for visiting my portfolio's code repository! I hope you find it as delightful as I found creating it! ✨
-Commit and push this README.md file to your GitHub repository.
-This README aims to be informative, welcoming, and match the "cutesy" and "awesome" vibe you're going for! Good luck!
