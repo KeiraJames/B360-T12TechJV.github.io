@@ -2,7 +2,7 @@
 
 # Keira James 
 #### Email: Keira.james35@bcmail.cuny.edu
-# [Click Here for Portfolio](https://keirajames.github.io)
+
 
 # Class Webpage Portfolio! 🐷✨
 
@@ -32,6 +32,7 @@ I'm a student passionate about creating cute and functional web experiences. I l
 
 *   **GitHub:** [@KeiraJames](https://github.com/KeiraJames) 
 *   Feel free to connect or check out my other projects!
+*   Email: Keira.james35@bcmail.cuny.edu
 
 ---
 
