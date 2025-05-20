@@ -1,9 +1,3 @@
-
-
-# Keira James 
-#### Email: Keira.james35@bcmail.cuny.edu
-
-
 # Class Webpage Portfolio! 🐷✨
 
 Welcome to the repository for my super adorable webpage created for my **CISC 3610** class! 💖 This page is a fun hub where I showcase all the cool projects and homework assignments I've been working on. It features a friendly animations, pastel colors, and lots of cute details! The goal was to create a delightful and easy-to-navigate space to present my work. I focused on a "cutesy" aesthetic with a consistent theme, using specific fonts, color palettes, and adorable  graphics!
