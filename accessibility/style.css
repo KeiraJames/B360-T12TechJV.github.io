@@ -1,0 +1,448 @@
+body {
+  padding: 0;
+  margin: 0;
+  backdrop-filter: blur(10px);
+}
+h2 {
+  font-size: 40px;
+}
+/*----------------------------------------------------------------------------------*/
+
+#slide_1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+
+  min-height: 1000px;
+  color: black;
+  display: grid;
+  place-items: center;
+}
+#slide_1::before {
+  content: ""; /* Essential for pseudo-elements */
+  position: absolute; /* Position it relative to the parent */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/014/799/180/non_2x/aesthetic-background-boho-background-background-with-rainbow-moon-leaves-dots-and-geometric-shapes-in-boho-and-aesthetic-style-illustration-vector.jpg"); /* Set your background image */
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat; /* Adjust as needed */
+  opacity: 0.8; /* Set the desired opacity (0.0 to 1.0) */
+  filter: blur(2px);
+  z-index: -1; /* Place it behind the content */
+}
+
+.content-box p {
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+.content-box {
+  position: relative;
+  text-align: center;
+  width: 87%;
+  height: 75%;
+
+  border: 2px black solid;
+  border-radius: 20px;
+  background-color: #c8b6a8;
+  box-shadow: 5px 10px #443428;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.center-content {
+  min-width: 70%;
+  min-height: 60%;
+}
+.comparison {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 0em;
+}
+.card {
+  background-color: #eee8e4;
+  border: 2px black solid;
+  border-radius: 15px;
+  box-shadow: 5px 10px #443428;
+  width: 60%;
+  min-width: 80%;
+  min-height: 80%;
+}
+.low-contrast-text {
+  color: #dbcfc6;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating-box {
+  animation: float 3s ease-in-out infinite;
+}
+
+img {
+  text-align: right;
+}
+/*----------------------------------------------------------------------------------*/
+
+#slide_2 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+
+  min-height: 1000px;
+  color: black;
+  display: grid;
+  place-items: center;
+}
+#slide_2::before {
+  content: ""; /* Essential for pseudo-elements */
+  position: absolute; /* Position it relative to the parent */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/014/799/180/non_2x/aesthetic-background-boho-background-background-with-rainbow-moon-leaves-dots-and-geometric-shapes-in-boho-and-aesthetic-style-illustration-vector.jpg"); /* Set your background image */
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat; /* Adjust as needed */
+  opacity: 0.8; /* Set the desired opacity (0.0 to 1.0) */
+  filter: blur(2px);
+  z-index: -1; /* Place it behind the content */
+}
+
+divider {
+  display: grid;
+  place-items: center;
+  background-color: #443428;
+  color: whitesmoke;
+  min-height: 600px;
+}
+
+divider p {
+  text-align: center;
+  border: 2px white dotted;
+  border-radius: 2px;
+  padding: 15px 10px 10px 10px;
+  background-color: white;
+  color: black;
+  font-size: 40px;
+  width: 30%;
+  height: 10%;
+}
+/*----------------------------------------------------------------------------------*/
+
+.hamburger {
+  position: sticky;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  background-color: #443428;
+  color: white;
+}
+
+/* Top horizontal nav bar */
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #443428;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.3s ease;
+  z-index: 1000;
+}
+
+/* When open, reveal the nav bar */
+.side-nav.open {
+  height: 60px;
+}
+
+/* Style the links horizontally */
+.side-nav a {
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  border-right: 1px solid #555;
+}
+
+.side-nav a:last-child {
+  border-right: none;
+}
+
+.side-nav a:hover {
+  background-color: #5a3d2f;
+}
+/*----------------------------------------------------------------------------------*/
+#slide_3 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+
+  min-height: 1000px;
+  color: black;
+  display: grid;
+  place-items: center;
+}
+#slide_3::before {
+  content: ""; /* Essential for pseudo-elements */
+  position: absolute; /* Position it relative to the parent */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/014/799/180/non_2x/aesthetic-background-boho-background-background-with-rainbow-moon-leaves-dots-and-geometric-shapes-in-boho-and-aesthetic-style-illustration-vector.jpg"); /* Set your background image */
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat; /* Adjust as needed */
+  opacity: 0.8; /* Set the desired opacity (0.0 to 1.0) */
+  filter: blur(2px);
+  z-index: -1; /* Place it behind the content */
+}
+
+.mini-site {
+  background-color: #998b7f;
+  max-height: 400px;
+  color: white;
+  border: 0.5px white solid;
+  width: 60%;
+  margin: auto;
+  overflow-y: auto;
+  position: relative;
+  border: 2px white solid;
+  border-radius: 5px;
+}
+.mini-site h4 {
+  text-align: left;
+  font-size: 20px;
+  padding: 0;
+  margin-top: 35px;
+}
+.mini-site p {
+  text-align: left;
+  font-size: 18px;
+}
+.mini-site-banner h2 {
+  margin: 0;
+  padding: 5px 5px;
+  font-size: 25px;
+  border-bottom: 0.5px white solid;
+}
+
+.mini-site-banner {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #443428;
+}
+navi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+navi li {
+  background-color: #72655b;
+  padding: 0;
+  margin: 0;
+  border: 0.3px white solid;
+  list-style: none;
+  width: 100%;
+  cursor: pointer;
+}
+navi li:hover {
+  background-color: #423e3a;
+  transition: 1s;
+}
+
+a {
+  text-decoration: none; /* removes underline */
+  color: inherit; /* inherits parent text color */
+}
+
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  color: white;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+#slide_4 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+
+  min-height: 1000px;
+  color: black;
+  display: grid;
+  place-items: center;
+}
+#slide_4::before {
+  content: ""; /* Essential for pseudo-elements */
+  position: absolute; /* Position it relative to the parent */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/014/799/180/non_2x/aesthetic-background-boho-background-background-with-rainbow-moon-leaves-dots-and-geometric-shapes-in-boho-and-aesthetic-style-illustration-vector.jpg"); /* Set your background image */
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat; /* Adjust as needed */
+  opacity: 0.8; /* Set the desired opacity (0.0 to 1.0) */
+  filter: blur(2px);
+  z-index: -1; /* Place it behind the content */
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+/* Global box-sizing */
+/* Container for the entire carousel */
+.carousel {
+  position: relative;
+
+  overflow: hidden; /* <--- THIS IS THE ONLY CRITICAL ADDITION HERE */
+
+  width: 100%;
+
+  max-width: 800px;
+
+  margin: auto;
+
+  border-radius: 10px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Track that holds all slides */
+
+.carousel-track {
+  display: flex;
+
+  transition: transform 0.5s ease-in-out;
+
+  will-change: transform;
+}
+
+/* Individual slide */
+
+.carousel-slide {
+  flex-shrink: 0;
+  background-color: rgb(201, 160, 23);
+  width: 100%; /* This will be overridden by JS for dynamic sizing */
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 0; /* Changed from 20px for single card per slide */
+
+  padding: 40px; /* Adjust as desired for spacing around the single card */
+
+  box-sizing: border-box;
+
+  background-color: #c8b6a8;
+}
+
+/* Specific styles for cards INSIDE the carousel slide */
+
+.carousel-slide .card {
+  max-width: 80%; /* Adjust this to control the width of the single card within the slide */
+
+  min-height: unset; /* Ensures vertical flexibility */
+  background-color: #8a7564;
+  color: white;
+  font-size: 20px;
+}
+
+/* Navigation buttons */
+
+.carousel-btn {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 16px;
+
+  cursor: pointer;
+
+  z-index: 10;
+
+  border-radius: 50%;
+
+  font-size: 18px;
+
+  transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+#slide_4 .content-box p {
+  padding-bottom: 0;
+}
+
+.hover-image {
+  position: relative;
+  width: 300px; /* adjust as needed */
+  height: auto;
+}
+
+.hover-image img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.hover-image:hover .hover-img {
+  opacity: 1;
+}
+
+.hover-image:hover .default-img {
+  opacity: 0;
+}
