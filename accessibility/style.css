@@ -499,5 +499,31 @@ nav {
     text-align: center;
   }
 }
+@media only screen and (max-width: 768px) {
+  /* NAV BAR FIX */
+  nav {
+    display: flex;
+    flex-direction: column;   /* stack items vertically on small screens */
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+  }
+
+  /* DIVIDER FIX */
+  .divider {
+    width: 80%;          /* make it shorter on mobile */
+    max-width: 300px;
+    margin: 1rem auto;   /* center it */
+    border-width: 1px;   /* thinner line */
+  }
+}
 
 
