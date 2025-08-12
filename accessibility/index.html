@@ -156,10 +156,10 @@
                 <div class="card floating-box carousel-card-style">
                   <h3>For the Kinesthetic Learner: See how it changes!</h3>
                   <div class="hover-image-container">
-                    <div class="hover-image">
+                    <div class="hover-image hover-image-trigger">
                       <img src="IMG_5102.png" alt="Default Image" class="default-img" />
                       <img src="IMG_5104.png" alt="Hover Image" class="hover-img" />
-                      <p>Sunflowers bloom in the sun. Hover over the image to make it bloom!</p>
+                      <p>Sunflowers bloom in the sun. Tap the image to make it bloom!</p>
                     </div>
                   </div>
                 </div>
@@ -173,12 +173,10 @@
       </section>
 
     <script>
-      // Navigation toggling for hamburger menu
       function toggleNav() {
         document.getElementById("sideNav").classList.toggle("open");
       }
 
-      // Smooth scrolling for skip links in mini-site
       document.querySelectorAll(".nav-link").forEach((link) => {
         link.addEventListener("click", function (e) {
           e.preventDefault();
@@ -194,48 +192,55 @@
         });
       });
 
-      // Wait for the DOM to be fully loaded before running carousel code
+      // Handle the hover/tap effect for the sunflower image
       document.addEventListener('DOMContentLoaded', () => {
-        // Only set up the carousel on desktop screens
-        if (window.innerWidth > 768) {
-          const carousel = document.querySelector(".carousel");
-          if (!carousel) return;
-
-          const track = document.querySelector(".carousel-track");
-          const slides = document.querySelectorAll(".carousel-slide");
-          const prevBtn = document.querySelector(".carousel-btn.prev");
-          const nextBtn = document.querySelector(".carousel-btn.next");
-
-          let currentSlide = 0;
-
-          function updateCarouselLayout() {
-            const slideWidth = carousel.offsetWidth;
-            slides.forEach((slide) => {
-              slide.style.width = `${slideWidth}px`;
-            });
-            track.style.width = `${slideWidth * slides.length}px`;
-            track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-          }
-
-          function goToSlide(index) {
-            const maxIndex = slides.length - 1;
-            if (index > maxIndex) {
-              currentSlide = 0;
-            } else if (index < 0) {
-              currentSlide = maxIndex;
-            } else {
-              currentSlide = index;
-            }
-            updateCarouselLayout();
-          }
-
-          nextBtn.addEventListener("click", () => goToSlide(currentSlide + 1));
-          prevBtn.addEventListener("click", () => goToSlide(currentSlide - 1));
-          window.addEventListener("resize", updateCarouselLayout);
-          window.addEventListener("load", updateCarouselLayout);
-          updateCarouselLayout();
+        const hoverImageTrigger = document.querySelector('.hover-image-trigger');
+        if (hoverImageTrigger) {
+          hoverImageTrigger.addEventListener('click', () => {
+            hoverImageTrigger.classList.toggle('hover-active');
+          });
         }
       });
+      
+      // Carousel functionality for desktop screens
+      if (window.innerWidth > 768) {
+        const carousel = document.querySelector(".carousel");
+        if (!carousel) return;
+
+        const track = document.querySelector(".carousel-track");
+        const slides = document.querySelectorAll(".carousel-slide");
+        const prevBtn = document.querySelector(".carousel-btn.prev");
+        const nextBtn = document.querySelector(".carousel-btn.next");
+
+        let currentSlide = 0;
+
+        function updateCarouselLayout() {
+          const slideWidth = carousel.offsetWidth;
+          slides.forEach((slide) => {
+            slide.style.width = `${slideWidth}px`;
+          });
+          track.style.width = `${slideWidth * slides.length}px`;
+          track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+        }
+
+        function goToSlide(index) {
+          const maxIndex = slides.length - 1;
+          if (index > maxIndex) {
+            currentSlide = 0;
+          } else if (index < 0) {
+            currentSlide = maxIndex;
+          } else {
+            currentSlide = index;
+          }
+          updateCarouselLayout();
+        }
+
+        nextBtn.addEventListener("click", () => goToSlide(currentSlide + 1));
+        prevBtn.addEventListener("click", () => goToSlide(currentSlide - 1));
+        window.addEventListener("resize", updateCarouselLayout);
+        window.addEventListener("load", updateCarouselLayout);
+        updateCarouselLayout();
+      }
     </script>
   </body>
 </html>
