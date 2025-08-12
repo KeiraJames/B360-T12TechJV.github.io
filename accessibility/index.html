@@ -13,9 +13,7 @@
       <a href="#slide_1">Color Contrast</a>
       <a href="#slide_2">Digestible Text</a>
       <a href="#slide_3">Skip Links</a>
-      <a href="#learning-styles">learning-styles</a>
-      <a href="#language-inclusion">language-inclusion</a>
-      <a href="#technical">Technical</a>
+      <a href="#slide_4">Learning Styles</a>
     </nav>
 
     <section id="slide_1">
@@ -81,7 +79,7 @@
           <div class="comparison">
             <div class="card floating-box">
               <h3>Option 1</h3>
-              <p class="low-contrast-text" style="color: black">Welcome to our website! We offer a wide range of services including web development, graphic design, SEO optimization, and digital marketing. Our team is dedicated to helping you grow your business online with customized solutions tailored to your goals and budget. And blah blah blah blah blah blahtty blah blahhed</p>
+              <p class="low-contrast-text">Welcome to our website! We offer a wide range of services including web development, graphic design, SEO optimization, and digital marketing. Our team is dedicated to helping you grow your business online with customized solutions tailored to your goals and budget. And blah blah blah blah blah blahtty blah blahhed</p>
             </div>
             <div class="card floating-box">
               <h3>Option 2</h3>
@@ -156,10 +154,10 @@
                 <div class="card floating-box carousel-card-style">
                   <h3>For the Kinesthetic Learner: See how it changes!</h3>
                   <div class="hover-image-container">
-                    <div class="hover-image hover-image-trigger">
+                    <div class="hover-image">
                       <img src="IMG_5102.png" alt="Default Image" class="default-img" />
                       <img src="IMG_5104.png" alt="Hover Image" class="hover-img" />
-                      <p>Sunflowers bloom in the sun. Tap the image to make it bloom!</p>
+                      <p>Sunflowers bloom in the sun. Hover over the image to make it bloom!</p>
                     </div>
                   </div>
                 </div>
@@ -173,10 +171,12 @@
       </section>
 
     <script>
+      // Navigation toggling for hamburger menu
       function toggleNav() {
         document.getElementById("sideNav").classList.toggle("open");
       }
 
+      // Smooth scrolling for skip links in mini-site
       document.querySelectorAll(".nav-link").forEach((link) => {
         link.addEventListener("click", function (e) {
           e.preventDefault();
@@ -192,51 +192,44 @@
         });
       });
 
-      // Handle the hover/tap effect for the sunflower image
-      document.addEventListener('DOMContentLoaded', () => {
-        const hoverImageTrigger = document.querySelector('.hover-image-trigger');
-        if (hoverImageTrigger) {
-          hoverImageTrigger.addEventListener('click', () => {
-            hoverImageTrigger.classList.toggle('hover-active');
-          });
+      // Carousel functionality
+      const carousel = document.querySelector(".carousel");
+      const track = document.querySelector(".carousel-track");
+      const slides = document.querySelectorAll(".carousel-slide");
+      const prevBtn = document.querySelector(".carousel-btn.prev");
+      const nextBtn = document.querySelector(".carousel-btn.next");
+
+      let currentSlide = 0;
+
+      function updateCarouselLayout() {
+        if (!carousel || !track || slides.length === 0) return;
+        const slideWidth = carousel.offsetWidth;
+        slides.forEach((slide) => {
+          slide.style.width = `${slideWidth}px`;
+        });
+        track.style.width = `${slideWidth * slides.length}px`;
+        track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+      }
+
+      function goToSlide(index) {
+        const maxIndex = slides.length - 1;
+        if (index > maxIndex) {
+          currentSlide = 0;
+        } else if (index < 0) {
+          currentSlide = maxIndex;
+        } else {
+          currentSlide = index;
         }
-      });
+        updateCarouselLayout();
+      }
       
-      // Carousel functionality for desktop screens
       if (window.innerWidth > 768) {
-        const carousel = document.querySelector(".carousel");
-        if (!carousel) return;
-
-        const track = document.querySelector(".carousel-track");
-        const slides = document.querySelectorAll(".carousel-slide");
-        const prevBtn = document.querySelector(".carousel-btn.prev");
-        const nextBtn = document.querySelector(".carousel-btn.next");
-
-        let currentSlide = 0;
-
-        function updateCarouselLayout() {
-          const slideWidth = carousel.offsetWidth;
-          slides.forEach((slide) => {
-            slide.style.width = `${slideWidth}px`;
-          });
-          track.style.width = `${slideWidth * slides.length}px`;
-          track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+        if (nextBtn) {
+          nextBtn.addEventListener("click", () => goToSlide(currentSlide + 1));
         }
-
-        function goToSlide(index) {
-          const maxIndex = slides.length - 1;
-          if (index > maxIndex) {
-            currentSlide = 0;
-          } else if (index < 0) {
-            currentSlide = maxIndex;
-          } else {
-            currentSlide = index;
-          }
-          updateCarouselLayout();
+        if (prevBtn) {
+          prevBtn.addEventListener("click", () => goToSlide(currentSlide - 1));
         }
-
-        nextBtn.addEventListener("click", () => goToSlide(currentSlide + 1));
-        prevBtn.addEventListener("click", () => goToSlide(currentSlide - 1));
         window.addEventListener("resize", updateCarouselLayout);
         window.addEventListener("load", updateCarouselLayout);
         updateCarouselLayout();
