@@ -1,3 +1,8 @@
+/*
+   =====================================
+   Base Styles (Desktop First)
+   =====================================
+*/
 body {
   padding: 0;
   margin: 0;
@@ -6,31 +11,29 @@ body {
 h2 {
   font-size: 40px;
 }
-/*----------------------------------------------------------------------------------*/
 
-#slide_1 {
+#slide_1, #slide_2, #slide_3, #slide_4 {
   position: relative;
-  padding: 0;
-  margin: 0;
-
   min-height: 1000px;
   color: black;
   display: grid;
   place-items: center;
+  padding: 0;
+  margin: 0;
 }
-#slide_1::before {
-  content: ""; /* Essential for pseudo-elements */
-  position: absolute; /* Position it relative to the parent */
+#slide_1::before, #slide_2::before, #slide_3::before, #slide_4::before {
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/014/799/180/non_2x/aesthetic-background-boho-background-background-with-rainbow-moon-leaves-dots-and-geometric-shapes-in-boho-and-aesthetic-style-illustration-vector.jpg"); /* Set your background image */
-  background-size: cover; /* Adjust as needed */
-  background-repeat: no-repeat; /* Adjust as needed */
-  opacity: 0.8; /* Set the desired opacity (0.0 to 1.0) */
+  background-image: url("https://static.vecteezy.com/system/resources/previews/014/799/180/non_2x/aesthetic-background-boho-background-background-with-rainbow-moon-leaves-dots-and-geometric-shapes-in-boho-and-aesthetic-style-illustration-vector.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
   filter: blur(2px);
-  z-index: -1; /* Place it behind the content */
+  z-index: -1;
 }
 
 .content-box p {
@@ -42,12 +45,10 @@ h2 {
   text-align: center;
   width: 87%;
   height: 75%;
-
   border: 2px black solid;
   border-radius: 20px;
   background-color: #c8b6a8;
   box-shadow: 5px 10px #443428;
-
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -87,39 +88,12 @@ h2 {
     transform: translateY(0);
   }
 }
-
 .floating-box {
   animation: float 3s ease-in-out infinite;
 }
 
 img {
   text-align: right;
-}
-/*----------------------------------------------------------------------------------*/
-
-#slide_2 {
-  position: relative;
-  padding: 0;
-  margin: 0;
-
-  min-height: 1000px;
-  color: black;
-  display: grid;
-  place-items: center;
-}
-#slide_2::before {
-  content: ""; /* Essential for pseudo-elements */
-  position: absolute; /* Position it relative to the parent */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/014/799/180/non_2x/aesthetic-background-boho-background-background-with-rainbow-moon-leaves-dots-and-geometric-shapes-in-boho-and-aesthetic-style-illustration-vector.jpg"); /* Set your background image */
-  background-size: cover; /* Adjust as needed */
-  background-repeat: no-repeat; /* Adjust as needed */
-  opacity: 0.8; /* Set the desired opacity (0.0 to 1.0) */
-  filter: blur(2px);
-  z-index: -1; /* Place it behind the content */
 }
 
 divider {
@@ -129,7 +103,6 @@ divider {
   color: whitesmoke;
   min-height: 600px;
 }
-
 divider p {
   text-align: center;
   border: 2px white dotted;
@@ -141,28 +114,25 @@ divider p {
   width: 30%;
   height: 10%;
 }
-/*----------------------------------------------------------------------------------*/
 
 .hamburger {
-  position: sticky;
+  display: none;
+  position: fixed;
   font-size: 30px;
   cursor: pointer;
   padding: 15px;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 1001;
   background-color: #443428;
   color: white;
 }
-
-/* Top horizontal nav bar */
 .side-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 0;
+  height: 60px;
   background-color: #443428;
   overflow: hidden;
   display: flex;
@@ -172,51 +142,20 @@ divider p {
   transition: height 0.3s ease;
   z-index: 1000;
 }
-
-/* When open, reveal the nav bar */
 .side-nav.open {
   height: 60px;
 }
-
-/* Style the links horizontally */
 .side-nav a {
   padding: 15px 20px;
   color: white;
   text-decoration: none;
   border-right: 1px solid #555;
 }
-
 .side-nav a:last-child {
   border-right: none;
 }
-
 .side-nav a:hover {
   background-color: #5a3d2f;
-}
-/*----------------------------------------------------------------------------------*/
-#slide_3 {
-  position: relative;
-  padding: 0;
-  margin: 0;
-
-  min-height: 1000px;
-  color: black;
-  display: grid;
-  place-items: center;
-}
-#slide_3::before {
-  content: ""; /* Essential for pseudo-elements */
-  position: absolute; /* Position it relative to the parent */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/014/799/180/non_2x/aesthetic-background-boho-background-background-with-rainbow-moon-leaves-dots-and-geometric-shapes-in-boho-and-aesthetic-style-illustration-vector.jpg"); /* Set your background image */
-  background-size: cover; /* Adjust as needed */
-  background-repeat: no-repeat; /* Adjust as needed */
-  opacity: 0.8; /* Set the desired opacity (0.0 to 1.0) */
-  filter: blur(2px);
-  z-index: -1; /* Place it behind the content */
 }
 
 .mini-site {
@@ -247,7 +186,6 @@ divider p {
   font-size: 25px;
   border-bottom: 0.5px white solid;
 }
-
 .mini-site-banner {
   position: sticky;
   top: 0;
@@ -259,7 +197,6 @@ navi {
   flex-direction: row;
   justify-content: space-evenly;
 }
-
 navi li {
   background-color: #72655b;
   padding: 0;
@@ -273,145 +210,74 @@ navi li:hover {
   background-color: #423e3a;
   transition: 1s;
 }
-
 a {
-  text-decoration: none; /* removes underline */
-  color: inherit; /* inherits parent text color */
-}
-
-a:visited,
-a:active,
-a:hover {
   text-decoration: none;
   color: inherit;
 }
-
+a:visited, a:active, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 nav {
   color: white;
 }
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
-#slide_4 {
-  position: relative;
-  padding: 0;
-  margin: 0;
 
-  min-height: 1000px;
-  color: black;
-  display: grid;
-  place-items: center;
-}
-#slide_4::before {
-  content: ""; /* Essential for pseudo-elements */
-  position: absolute; /* Position it relative to the parent */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/014/799/180/non_2x/aesthetic-background-boho-background-background-with-rainbow-moon-leaves-dots-and-geometric-shapes-in-boho-and-aesthetic-style-illustration-vector.jpg"); /* Set your background image */
-  background-size: cover; /* Adjust as needed */
-  background-repeat: no-repeat; /* Adjust as needed */
-  opacity: 0.8; /* Set the desired opacity (0.0 to 1.0) */
-  filter: blur(2px);
-  z-index: -1; /* Place it behind the content */
-}
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
-/* Global box-sizing */
-/* Container for the entire carousel */
+/* --- Carousel Styles (Desktop) --- */
 .carousel {
   position: relative;
-
-  overflow: hidden; /* <--- THIS IS THE ONLY CRITICAL ADDITION HERE */
-
   width: 100%;
-
   max-width: 800px;
-
   margin: auto;
-
   border-radius: 10px;
-
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
-
-/* Track that holds all slides */
-
 .carousel-track {
   display: flex;
-
   transition: transform 0.5s ease-in-out;
-
   will-change: transform;
 }
-
-/* Individual slide */
-
 .carousel-slide {
   flex-shrink: 0;
-  background-color: rgb(201, 160, 23);
-  width: 100%; /* This will be overridden by JS for dynamic sizing */
-
+  width: 100%;
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
-  gap: 0; /* Changed from 20px for single card per slide */
-
-  padding: 40px; /* Adjust as desired for spacing around the single card */
-
+  gap: 0;
+  padding: 40px;
   box-sizing: border-box;
-
   background-color: #c8b6a8;
 }
-
-/* Specific styles for cards INSIDE the carousel slide */
-
 .carousel-slide .card {
-  max-width: 80%; /* Adjust this to control the width of the single card within the slide */
-
-  min-height: unset; /* Ensures vertical flexibility */
+  max-width: 80%;
+  min-height: unset;
   background-color: #8a7564;
   color: white;
   font-size: 20px;
 }
-
-/* Navigation buttons */
-
+.carousel-card-style {
+  background-color: rgb(160, 127, 19);
+}
 .carousel-btn {
   position: absolute;
-
   top: 50%;
-
   transform: translateY(-50%);
-
   background-color: rgba(0, 0, 0, 0.5);
-
   color: white;
-
   border: none;
-
   padding: 12px 16px;
-
   cursor: pointer;
-
   z-index: 10;
-
   border-radius: 50%;
-
   font-size: 18px;
-
   transition: background-color 0.3s ease;
 }
-
 .carousel-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .carousel-btn.prev {
   left: 10px;
 }
-
 .carousel-btn.next {
   right: 10px;
 }
@@ -419,111 +285,193 @@ nav {
 #slide_4 .content-box p {
   padding-bottom: 0;
 }
-
+.visual-learner-image {
+  max-width: 70%;
+  max-height: 250px;
+  border: 2px solid #443428;
+  border-radius: 5px;
+  float: right;
+  margin: 0 10px 10px 10px;
+}
+.visual-learner-text {
+  font-size: 0.9em;
+  margin-top: 20px;
+  padding-top: 35px;
+}
+.auditory-list-style {
+  list-style: none;
+  padding: 0;
+}
+.hover-image-container {
+  padding: 15px;
+  text-align: left;
+}
 .hover-image {
   position: relative;
-  width: 300px; /* adjust as needed */
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  margin: auto;
+  align-items: center; /* This is the key change to center items horizontally */
 }
-
 .hover-image img {
-  width: 100%;
+  width: 200px;
+  height: 200px;
+  border: 1px #443428 solid;
+  border-radius: 20px;
+  margin-left: 56px;
   display: block;
   transition: opacity 0.3s ease;
 }
-
 .hover-img {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
-
 .hover-image:hover .hover-img {
   opacity: 1;
 }
-
 .hover-image:hover .default-img {
   opacity: 0;
 }
-
-@media only screen and (max-width: 768px) {
-  .content-box {
-    display: flex;
-    flex-direction: row-reverse;
-    overflow-x: auto;   /* Scroll if overflowing */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  }
-
-  .comparison {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    overflow-x: auto; 
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .card {
-    min-width: 300px; /* Keep readable size */
-  }
+.hover-image p {
+  text-align: center;
+  font-size: 20px;
 }
 
-@media only screen and (max-width: 768px) {
 
-  /* Make cards stack vertically instead of squishing */
-  .content-box, .comparison {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: visible; /* prevent horizontal scroll unless needed */
+/*
+   =====================================
+   Mobile Styles (max-width: 768px)
+   =====================================
+*/
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2em;
   }
-
-  /* Keep text readable */
-  .card {
-    width: 90%;        /* take most of screen width */
-    min-width: auto;   /* remove min-width restriction */
-    max-width: 500px;
-    margin: 1rem 0;
-    box-sizing: border-box;
-  }
-
-  /* Fix giant vertical text issue */
-  .long-text {
-    white-space: normal;  /* allow wrapping */
-    overflow-wrap: break-word;
-    word-break: break-word;
-  }
-
-  /* Titles that overflow */
-  h1, h2, h3 {
-    font-size: clamp(1.2rem, 5vw, 2rem);
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 768px) {
-  /* NAV BAR FIX */
-  nav {
-    display: flex;
-    flex-direction: column;   /* stack items vertically on small screens */
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem;
-  }
-
-  nav a {
+  .hamburger {
     display: block;
+    width: 60px;
+    text-align: center;
+    background-color: #443428;
+    color: white;
+    border-radius: 5px;
+  }
+  .side-nav {
+    height: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 0;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+  .side-nav.open {
+    height: auto;
+    max-height: 100vh;
+    padding-top: 60px;
+  }
+  .side-nav a {
+    border-right: none;
+    border-bottom: 1px solid #555;
     width: 100%;
     text-align: center;
-    padding: 0.5rem;
-    font-size: clamp(0.9rem, 4vw, 1.1rem);
+  }
+  .side-nav a:last-child {
+    border-bottom: none;
   }
 
-  /* DIVIDER FIX */
-  .divider {
-    width: 80%;          /* make it shorter on mobile */
-    max-width: 300px;
-    margin: 1rem auto;   /* center it */
-    border-width: 1px;   /* thinner line */
+  .content-box {
+    width: 90%;
+    height: auto;
+    min-height: unset;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .content-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .content-box p {
+    font-size: 1em;
+  }
+  .comparison {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .card {
+    width: 100%;
+    min-width: unset;
+    height: auto;
+    min-height: unset;
+  }
+
+  divider {
+    min-height: 200px;
+  }
+  divider p {
+    font-size: 1.5em;
+    width: 80%;
+  }
+
+  .mini-site {
+    width: 90%;
+    max-height: 80vh;
+  }
+  navi {
+    flex-direction: column;
+  }
+  navi li {
+    width: 100%;
+  }
+  .mini-site h4, .mini-site p {
+    padding: 0 15px;
+  }
+
+  /* --- Carousel Mobile Styles --- */
+  .carousel {
+    max-width: none;
+    width: 100%;
+    overflow: visible;
+    box-shadow: none;
+  }
+  .carousel-track {
+    display: block;
+  }
+  .carousel-slide {
+    padding: 20px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    background-color: transparent;
+  }
+  .carousel-slide .card {
+    max-width: 100%;
+    min-height: unset;
+    margin: auto;
+  }
+  .carousel-btn {
+    display: none;
+  }
+
+  .visual-learner-image {
+    float: none;
+    max-width: 100%;
+    margin: 10px auto;
+  }
+  .visual-learner-text {
+    font-size: 1em;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  /* Fix to center images within hover-image class on mobile */
+  .hover-image {
+    align-items: center;
+  }
+  .hover-image img {
+    margin-left: 0; /* Remove fixed left margin */
   }
 }
-
-
