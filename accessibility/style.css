@@ -14,7 +14,7 @@ h2 {
 
 #slide_1, #slide_2, #slide_3, #slide_4 {
   position: relative;
-  min-height: 1000px;
+  min-height: 700px;
   color: black;
   display: grid;
   place-items: center;
@@ -101,7 +101,7 @@ divider {
   place-items: center;
   background-color: #443428;
   color: whitesmoke;
-  min-height: 600px;
+  min-height: 300px;
 }
 divider p {
   text-align: center;
@@ -329,12 +329,21 @@ nav {
   left: 0;
   opacity: 0;
 }
+/* The hover effect for desktop */
 .hover-image:hover .hover-img {
   opacity: 1;
 }
 .hover-image:hover .default-img {
   opacity: 0;
 }
+/* The tap effect for mobile */
+.hover-image-trigger.hover-active .hover-img {
+  opacity: 1;
+}
+.hover-image-trigger.hover-active .default-img {
+  opacity: 0;
+}
+
 .hover-image p {
   text-align: center;
   font-size: 20px;
@@ -394,6 +403,12 @@ nav {
     height: auto;
     margin-bottom: 20px;
   }
+  #slide_1 .content-box img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    display: block;
+  }
   .content-box p {
     font-size: 1em;
   }
@@ -430,7 +445,6 @@ nav {
     padding: 0 15px;
   }
 
-  /* --- Carousel Mobile Styles --- */
   .carousel {
     max-width: none;
     width: 100%;
