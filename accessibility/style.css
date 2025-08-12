@@ -438,12 +438,11 @@ nav {
     box-shadow: none;
   }
   .carousel-track {
-    /* Override flexbox for mobile to stack cards vertically */
     display: block;
   }
   .carousel-slide {
     padding: 20px;
-    width: 100%; /* Ensure each card takes full width of the container */
+    width: 100%;
     display: block;
     margin-bottom: 20px;
     background-color: transparent;
