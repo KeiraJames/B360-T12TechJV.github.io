@@ -306,7 +306,7 @@ nav {
 }
 .hover-image-container {
   padding: 15px;
-  text-align: left;
+  text-align: center;
 }
 .hover-image {
   position: relative;
@@ -321,14 +321,13 @@ nav {
   height: 200px;
   border: 1px #443428 solid;
   border-radius: 20px;
-  margin-left: 56px;
-  display: block;
-  transition: opacity 0.3s ease;
+  margin: 0;
+  
+  transition: opacity 1s ease;
 }
 .hover-img {
   position: absolute;
-  top: 0;
-  left: 0;
+
   opacity: 0;
 }
 .hover-image:hover .hover-img {
@@ -392,7 +391,7 @@ nav {
     padding: 20px;
   }
   .content-box img {
-    width: 60%;
+    width: 80%;
     height: auto;
     margin-bottom: 20px;
   }
