@@ -14,7 +14,7 @@ h2 {
 
 #slide_1, #slide_2, #slide_3, #slide_4 {
   position: relative;
-  min-height: 700px; /* Reduced from 1000px */
+  min-height: 700px;
   color: black;
   display: grid;
   place-items: center;
@@ -44,7 +44,7 @@ h2 {
   position: relative;
   text-align: center;
   width: 87%;
-  height: 75%;
+  min-height: 75vh;
   border: 2px black solid;
   border-radius: 20px;
   background-color: #c8b6a8;
@@ -94,6 +94,8 @@ h2 {
 
 img {
   text-align: right;
+  max-width: 100%;
+  height: auto;
 }
 
 divider {
@@ -101,7 +103,7 @@ divider {
   place-items: center;
   background-color: #443428;
   color: whitesmoke;
-  min-height: 300px; /* Reduced from 600px */
+  min-height: 300px;
 }
 divider p {
   text-align: center;
@@ -390,7 +392,7 @@ nav {
     padding: 20px;
   }
   .content-box img {
-    width: 100%;
+    width: 80%;
     height: auto;
     margin-bottom: 20px;
   }
