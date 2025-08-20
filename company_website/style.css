@@ -1,0 +1,193 @@
+/* --- Global Styles & Variables --- */
+:root {
+  --primary-blue: #0A2240; /* A deep, strong navy blue */
+  --accent-red: #D81E05;   /* A bold, confident red */
+  --light-blue-bg: #F0F4F8; /* A very light blue for backgrounds */
+  --dark-gray: #333;
+  --medium-gray: #555;
+  --background-color: #ffffff;
+  --sans-serif-font: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* --- Animation Keyframes --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+body {
+  font-family: var(--sans-serif-font);
+  line-height: 1.6;
+  color: var(--dark-gray);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+
+h1 { font-size: 3.2rem; line-height: 1.2; }
+h2 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; position: relative; padding-bottom: 10px; }
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-red);
+}
+
+p { color: var(--medium-gray); margin-bottom: 1rem; }
+section { padding: 5rem 0; position: relative; }
+
+/* --- Header & Navigation --- */
+header { background: var(--background-color); box-shadow: 0 2px 8px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; padding: 0.5rem 0; }
+header strong { color: var(--primary-blue); }
+header nav a { color: var(--primary-blue); text-decoration: none; font-weight: 600; margin: 0 1rem; transition: color 0.3s ease; position: relative; padding-bottom: 5px; }
+header nav a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: var(--accent-red); transition: width 0.3s ease; }
+header nav a:hover::after { width: 100%; }
+
+/* --- Hero Section (#home) with Animation --- */
+#home { background: var(--light-blue-bg); text-align: center; padding: 6rem 0; }
+#home h1, #home p, #home .btn { opacity: 0; animation: fadeInUp 0.8s ease-out forwards; }
+#home p { animation-delay: 0.2s; }
+#home .btn { animation-delay: 0.4s; }
+
+.btn { display: inline-block; background-color: var(--accent-red); color: #fff; padding: 0.9rem 1.8rem; border-radius: 5px; text-decoration: none; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; transition: background-color 0.3s ease, transform 0.2s ease; }
+.btn:hover { background-color: #A81704; transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+
+/* --- Parallax Sections --- */
+.parallax {
+  /* This class should be on your #about and #testimonials sections */
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  
+  /* --- FIX: ADDED FALLBACK COLOR --- */
+  background-color: var(--primary-blue); /* This shows if the image fails to load */
+  background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2070&auto=format&fit=crop');
+}
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Dark blue overlay */
+    background: rgba(10, 34, 64, 0.75); 
+    z-index: 1;
+}
+
+.parallax .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* --- FIX: Ensure all text in parallax sections is white --- */
+.parallax h2, .parallax p, .parallax li, .parallax em {
+    color: #fff;
+}
+
+.parallax h2::after {
+    background-color: #fff; /* White accent line */
+}
+
+
+/* --- Card Styles --- */
+#services .container, #testimonials .container, #contact .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
+.card { background: var(--background-color); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid var(--primary-blue); transition: transform 0.3s ease, box-shadow 0.3s ease; opacity: 0; transform: translateY(20px); animation: fadeInUp 0.7s ease-out forwards; flex: 0 1 320px; padding: 1.5rem; }
+#services .card { text-align: center; }
+#services .card h3 { font-size: 1.5rem; }
+
+/* Stagger the card animations */
+#services .card:nth-child(2), #testimonials .card:nth-child(2), #contact .card:nth-child(2) { animation-delay: 0.2s; }
+#services .card:nth-child(3) { animation-delay: 0.4s; }
+#services .card:nth-child(4) { animation-delay: 0.6s; }
+
+.card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
+
+/* --- Section Specifics & Divider --- */
+#about ul { list-style: none; padding-left: 0; text-align: center; }
+#about li { margin-bottom: 0.5rem; }
+
+#testimonials.parallax .card {
+    /* Adjust testimonial cards for dark background */
+    background-color: rgba(255, 255, 255, 0.1); /* Translucent card */
+    border-top-color: var(--accent-red);
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+}
+#testimonials.parallax .card p {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+#contact { background-color: var(--light-blue-bg); }
+
+/* Angled Divider */
+#services {
+    padding-bottom: 8vw; /* Add space at the bottom for the shape */
+    background: var(--background-color);
+}
+#services::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8vw; /* Height of the shape */
+    background: inherit; /* Inherit the white background */
+    clip-path: polygon(0 100%, 100% 0, 100% 100%); /* Angled cut-out effect */
+    transform: translateY(1px); /* Prevents rendering gaps */
+}
+
+
+/* --- Contact Form & Footer --- */
+#contactForm { display: flex; flex-direction: column; gap: 1rem; }
+#contactForm input, #contactForm textarea { font-family: var(--sans-serif-font); padding: 0.8rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+#contactForm input:focus, #contactForm textarea:focus { outline: 2px solid var(--primary-blue); border-color: transparent; }
+#contactForm button { width: 100%; border: none; cursor: pointer; }
+#contact .card a { color: var(--accent-red); font-weight: 600; text-decoration: none; }
+#contact .card a:hover { text-decoration: underline; }
+
+footer { background: var(--primary-blue); color: #fff; text-align: center; padding: 2rem 0; }
+footer .container { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  header .container { flex-direction: column; gap: 1rem; }
+  header nav { display: flex; flex-wrap: wrap; justify-content: center; }
+  section { padding: 3rem 0; }
+  .card { flex-basis: 100%; }
+  .parallax { background-attachment: scroll; } /* Disable fixed parallax on mobile */
+}
+
+.card p {
+    color: black;
+}
