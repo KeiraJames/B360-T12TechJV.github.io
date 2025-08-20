@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B360 × T12Tech JV — Comprehensive Global Services</title>
+
+  <!-- SEO tags -->
+  <link rel="canonical" href="https://www.example.com">
+  <meta name="description" content="B360-T12Tech JV delivers construction, training, IT, and logistics with 30+ years of combined federal, DOD, and private industry experience.">
+  <meta property="og:title" content="B360 × T12Tech JV">
+  <meta property="og:description" content="B360-T12Tech JV delivers construction, training, IT, and logistics with 30+ years of combined federal, DOD, and private industry experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com">
+  <meta property="og:image" content="logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="B360 × T12Tech JV">
+  <meta name="twitter:description" content="B360-T12Tech JV delivers construction, training, IT, and logistics with 30+ years of combined federal, DOD, and private industry experience.">
+  <meta name="twitter:image" content="logo.png">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX'); // replace with your GA ID
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <img src="logo.png" alt="B360 × T12Tech JV logo" style="height:100px;">
+        <span><strong>B360 × T12Tech JV</strong></span>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section id="home">
+    <div class="container">
+      <h1>Dynamic Services for Global Objectives</h1>
+      <p>B360-T12Tech JV provides <strong>construction, training, IT, and logistics</strong> with 30+ years of Government, DoD, and private industry experience.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+
+  <section id="about"  class="parallax">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>The B360-T12Tech JV brings together firms with 50+ years of experience supporting US federal agencies, international organizations, and African governments.</p>
+      <ul>
+        <li><strong>Training:</strong> Decades of experience across Africa.</li>
+        <li><strong>Logistics:</strong> Just-in-time expertise for efficiency.</li>
+        <li><strong>O&M:</strong> Navigate challenges efficiently.</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section id="services"  class="parallax">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="card"><h3>Construction</h3><p>Facilities and infrastructure projects worldwide.</p></div>
+      <div class="card"><h3>Training</h3><p>Cost-efficient training programs for government missions.</p></div>
+      <div class="card"><h3>IT</h3><p>Advanced IT solutions to improve operations and security.</p></div>
+      <div class="card"><h3>Logistics</h3><p>Reliable, cost-saving delivery systems in complex regions.</p></div>
+    </div>
+  </section>
+
+  <section id="testimonials"  class="parallax">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="card"><p><em>“The JV’s logistics support significantly reduced our delivery times while maintaining cost control.”</em></p></div>
+      <div class="card"><p><em>“Their training programs in Africa were highly effective and delivered at a fraction of the cost.”</em></p></div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="card">
+        <form id="contactForm">
+          <input type="text" name="name" required placeholder="Full name">
+          <input type="email" name="email" required placeholder="Work email">
+          <input type="text" name="company" placeholder="Company">
+          <textarea name="message" required placeholder="Your message"></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        <div id="formMessage" style="display:none;color:green;margin-top:1rem;">
+          Thanks! Your message has been received.
+        </div>
+      </div>
+      <div class="card">
+        <p>Email: <a href="mailto:TChance@T12-Tech.com">TChance@T12-Tech.com</a></p>
+        <p>Phone: <a href="tel:+3016329613">+1 (301) 632-9613</a></p>
+        <p>Address: 123 JV Way, Suite 100, Washington, DC 20001</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <img src="logo.png" style="height:32px;" alt="logo">
+      <p>© <span id="year"></span> B360 × T12Tech JV. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Form submission handler
+    const form = document.getElementById("contactForm");
+    const msg = document.getElementById("formMessage");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      try {
+        let res = await fetch("https://formspree.io/f/yourFormID", {
+          method: "POST",
+          headers: { "Accept": "application/json" },
+          body: data
+        });
+        if (res.ok) {
+          msg.style.display = "block";
+          form.reset();
+        } else {
+          alert("There was an issue sending your message.");
+        }
+      } catch {
+        alert("Network error. Please try again.");
+      }
+    });
+  </script>
+
+</body>
+</html>
